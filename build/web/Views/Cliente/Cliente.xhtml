@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <body>
+
+        <ui:composition template="./../../plantilla/plantilla.xhtml">
+
+            <ui:define name="content">
+                <h1>Datos de Inmueble</h1>
+                
+                
+                <h:form id="formMostraClientes">
+                    <p:dataTable id="tablaClientes" paginator="true" paginatorPosition="top"
+                                 var="ct" value="#{clienteBean.listaClientes}"
+                                 emptyMessage="No se encontro inmueble"
+                                 widgetVar="tablaclienteBuscar"
+                                 filteredValue="#{clienteBean.clientesFiltrados}">
+                        
+                        <f:facet name="header">
+                            <p:outputPanel>
+                                <h:outputText value="Buscar:"/>
+                                <p:inputText id="globalFilter" onkeyup="PF('tablaclienteBuscar').filter()"
+                                             style="width: 350px;" placeholder="Buscar por ciudad"/>
+                            </p:outputPanel>
+                        </f:facet>
+                        
+                        <p:column headerText="Codigo" >
+                            <h:outputText value="#{ct.codCliente}"/>
+                        </p:column>
+                        
+                        <p:column headerText="Nombre del Inmueble" sortBy="#{ct.nombres}">
+                            <h:outputText value="#{ct.nombres} #{ct.apellidos}"/>
+                        </p:column>
+                        
+                        
+                        <p:column headerText="direccion" filterBy="#{ct.direccion}">
+                            <h:outputText value="#{ct.direccion}"/>
+                        </p:column>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </p:dataTable>
+                </h:form>
+                
+            
+                
+               
+                
+            </ui:define>
+        </ui:composition>
+    </body>
+</html>
