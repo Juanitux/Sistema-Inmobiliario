@@ -9,38 +9,32 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <h:outputStylesheet name="/css/default.css"/>
         <h:outputStylesheet name="/css/cssLayout.css"/>
+
         <title>Facelets Template</title>
     </h:head>
 
     <h:body>
         <div id="divGeneral">
-
             <div id="top">
                 <ui:insert name="top"></ui:insert>
-                <h1>Inmocentral</h1>
-
-                <div id="sessionUsuario">
-
-                    
-                </div>
-                
-               
-
-
                 <div id="menuPrincipal">
-                    <h:form>  
+
+                    <h:form> 
+                        <h:graphicImage url="resources/images/logo.png" width="7% " height="7%" ></h:graphicImage>
                         <p:menubar>
-                            <p:submenu label="Inicio" icon="ui-icon-document">
-                                <p:menuitem value="Pagina Inicio" url="#" />
-                                <p:separator />
-                                <p:menuitem value="Salir" action="#{loginBean.cerrarSession()}" />
-                            </p:submenu>
-
-                            <p:submenu label="Inmueble" icon="ui-icon-pencil">
-                                <p:menuitem value="Ver y Editar" outcome="/Views/Cliente/Cliente" icon="ui-icon-arrowreturnthick-1-w" />
-                            </p:submenu>
-
-                            
+                            <p:column>
+                                <strong>Image</strong>
+                                <p:graphicImage name="resources/images/logo.png" width="200"/>
+                            </p:column>
+                            <p:menuitem value="Inicio" style="margin: 10px 50px 30px 350px;" 
+                                        > </p:menuitem>
+                            <p:menuitem value="Proyectos" style="margin: 10px 50px 30px 1px;" > </p:menuitem>
+                            <p:menuitem value="Servicios" style="margin: 10px 50px 30px 1px;" 
+                                        outcome="/Views/Inmueble/Inmueble"> </p:menuitem>
+                            <p:menuitem value="Experiencia" style="margin: 10px 50px 30px 1px;" > </p:menuitem>
+                            <p:menuitem value="Nosotros" style="margin: 10px 50px 30px 1px;" > </p:menuitem>
+                            <p:menuitem value="Contacto" style="margin: 10px 50px 30px 1px;" > </p:menuitem>
+                            <p:menuitem value="Blog" style="margin: 10px 50px 30px 1px;" > </p:menuitem>
 
                         </p:menubar>
                     </h:form>

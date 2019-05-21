@@ -1,0 +1,766 @@
+*{margin: 0px; padding:0px;}
+@font-face {
+    font-family: 'Nexa_Light';
+	src: url('../fuentes/Nexa_Light.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fortheenas_01';
+	src: url('../fuentes/Fortheenas_01.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Fortheenas_01_Bold';
+	src: url('../fuentes/Fortheenas_01_Bold.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Fortheenas_01_Bold_Italic';
+	src: url('../fuentes/Fortheenas_01_Bold_Italic.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Fortheenas_01_Italic';
+	src: url('../fuentes/Fortheenas_01_Italic.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Nexa_Bold';
+	src: url('../fuentes/Nexa_Bold.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Nexa_Bold_2';
+	src: url('../fuentes/Nexa_Bold_2.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;}
+@font-face {
+    font-family: 'Nexa_Bold_3';
+	src: url('../fuentes/Nexa_Bold_3.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Nexa_Bold_4';
+	src: url('../fuentes/Nexa_Bold_4.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+        font-family: 'Nexa_Bold_5';
+	src: url('../fuentes/Nexa_Bold_5.otf')format('opentype');
+        font-weight: normal;
+	font-style: normal;
+}
+
+.animation-target {
+  -webkit-animation: animation 865ms linear both;
+  animation: animation 865ms linear both;
+}
+
+@-webkit-keyframes animation { 
+  0% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -300, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -300, 0, 0, 1); }
+  2.92% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -135.218, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -135.218, 0, 0, 1); }
+  3.37% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -114.871, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -114.871, 0, 0, 1); }
+  3.47% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -110.596, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -110.596, 0, 0, 1); }
+  4.58% { -webkit-transform: matrix3d(2.061, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -68.65, 0, 0, 1); transform: matrix3d(2.061, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -68.65, 0, 0, 1); }
+  5.69% { -webkit-transform: matrix3d(2.321, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -36.551, 0, 0, 1); transform: matrix3d(2.321, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -36.551, 0, 0, 1); }
+  5.76% { -webkit-transform: matrix3d(2.32, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -34.768, 0, 0, 1); transform: matrix3d(2.32, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -34.768, 0, 0, 1); }
+  7.41% { -webkit-transform: matrix3d(1.99, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.804, 0, 0, 1); transform: matrix3d(1.99, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.804, 0, 0, 1); }
+  7.51% { -webkit-transform: matrix3d(1.961, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.454, 0, 0, 1); transform: matrix3d(1.961, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.454, 0, 0, 1); }
+  7.88% { -webkit-transform: matrix3d(1.771, 0, 0, 0, 0, 1.062, 0, 0, 0, 0, 1, 0, 2.008, 0, 0, 1); transform: matrix3d(1.771, 0, 0, 0, 0, 1.062, 0, 0, 0, 0, 1, 0, 2.008, 0, 0, 1); }
+  8.68% { -webkit-transform: matrix3d(1.408, 0, 0, 0, 0, 1.181, 0, 0, 0, 0, 1, 0, 9.646, 0, 0, 1); transform: matrix3d(1.408, 0, 0, 0, 0, 1.181, 0, 0, 0, 0, 1, 0, 9.646, 0, 0, 1); }
+  10.03% { -webkit-transform: matrix3d(0.982, 0, 0, 0, 0, 1.333, 0, 0, 0, 0, 1, 0, 16.853, 0, 0, 1); transform: matrix3d(0.982, 0, 0, 0, 0, 1.333, 0, 0, 0, 0, 1, 0, 16.853, 0, 0, 1); }
+  10.85% { -webkit-transform: matrix3d(0.822, 0, 0, 0, 0, 1.398, 0, 0, 0, 0, 1, 0, 18.613, 0, 0, 1); transform: matrix3d(0.822, 0, 0, 0, 0, 1.398, 0, 0, 0, 0, 1, 0, 18.613, 0, 0, 1); }
+  11.53% { -webkit-transform: matrix3d(0.732, 0, 0, 0, 0, 1.439, 0, 0, 0, 0, 1, 0, 18.992, 0, 0, 1); transform: matrix3d(0.732, 0, 0, 0, 0, 1.439, 0, 0, 0, 0, 1, 0, 18.992, 0, 0, 1); }
+  12.22% { -webkit-transform: matrix3d(0.672, 0, 0, 0, 0, 1.469, 0, 0, 0, 0, 1, 0, 18.618, 0, 0, 1); transform: matrix3d(0.672, 0, 0, 0, 0, 1.469, 0, 0, 0, 0, 1, 0, 18.618, 0, 0, 1); }
+  14.18% { -webkit-transform: matrix3d(0.612, 0, 0, 0, 0, 1.501, 0, 0, 0, 0, 1, 0, 15.054, 0, 0, 1); transform: matrix3d(0.612, 0, 0, 0, 0, 1.501, 0, 0, 0, 0, 1, 0, 15.054, 0, 0, 1); }
+  14.37% { -webkit-transform: matrix3d(0.612, 0, 0, 0, 0, 1.501, 0, 0, 0, 0, 1, 0, 14.604, 0, 0, 1); transform: matrix3d(0.612, 0, 0, 0, 0, 1.501, 0, 0, 0, 0, 1, 0, 14.604, 0, 0, 1); }
+  19.23% { -webkit-transform: matrix3d(0.737, 0, 0, 0, 0, 1.371, 0, 0, 0, 0, 1, 0, 3.855, 0, 0, 1); transform: matrix3d(0.737, 0, 0, 0, 0, 1.371, 0, 0, 0, 0, 1, 0, 3.855, 0, 0, 1); }
+  20.01% { -webkit-transform: matrix3d(0.763, 0, 0, 0, 0, 1.338, 0, 0, 0, 0, 1, 0, 2.724, 0, 0, 1); transform: matrix3d(0.763, 0, 0, 0, 0, 1.338, 0, 0, 0, 0, 1, 0, 2.724, 0, 0, 1); }
+  23.05% { -webkit-transform: matrix3d(0.856, 0, 0, 0, 0, 1.211, 0, 0, 0, 0, 1, 0, 0.036, 0, 0, 1); transform: matrix3d(0.856, 0, 0, 0, 0, 1.211, 0, 0, 0, 0, 1, 0, 0.036, 0, 0, 1); }
+  25.75% { -webkit-transform: matrix3d(0.923, 0, 0, 0, 0, 1.114, 0, 0, 0, 0, 1, 0, -0.709, 0, 0, 1); transform: matrix3d(0.923, 0, 0, 0, 0, 1.114, 0, 0, 0, 0, 1, 0, -0.709, 0, 0, 1); }
+  26.94% { -webkit-transform: matrix3d(0.947, 0, 0, 0, 0, 1.078, 0, 0, 0, 0, 1, 0, -0.76, 0, 0, 1); transform: matrix3d(0.947, 0, 0, 0, 0, 1.078, 0, 0, 0, 0, 1, 0, -0.76, 0, 0, 1); }
+  31.58% { -webkit-transform: matrix3d(1.009, 0, 0, 0, 0, 0.987, 0, 0, 0, 0, 1, 0, -0.406, 0, 0, 1); transform: matrix3d(1.009, 0, 0, 0, 0, 0.987, 0, 0, 0, 0, 1, 0, -0.406, 0, 0, 1); }
+  31.73% { -webkit-transform: matrix3d(1.01, 0, 0, 0, 0, 0.986, 0, 0, 0, 0, 1, 0, -0.392, 0, 0, 1); transform: matrix3d(1.01, 0, 0, 0, 0, 0.986, 0, 0, 0, 0, 1, 0, -0.392, 0, 0, 1); }
+  37.32% { -webkit-transform: matrix3d(1.029, 0, 0, 0, 0, 0.958, 0, 0, 0, 0, 1, 0, -0.03, 0, 0, 1); transform: matrix3d(1.029, 0, 0, 0, 0, 0.958, 0, 0, 0, 0, 1, 0, -0.03, 0, 0, 1); }
+  38.15% { -webkit-transform: matrix3d(1.029, 0, 0, 0, 0, 0.958, 0, 0, 0, 0, 1, 0, -0.008, 0, 0, 1); transform: matrix3d(1.029, 0, 0, 0, 0, 0.958, 0, 0, 0, 0, 1, 0, -0.008, 0, 0, 1); }
+  42.35% { -webkit-transform: matrix3d(1.022, 0, 0, 0, 0, 0.969, 0, 0, 0, 0, 1, 0, 0.03, 0, 0, 1); transform: matrix3d(1.022, 0, 0, 0, 0, 0.969, 0, 0, 0, 0, 1, 0, 0.03, 0, 0, 1); }
+  48.9% { -webkit-transform: matrix3d(1.007, 0, 0, 0, 0, 0.99, 0, 0, 0, 0, 1, 0, 0.009, 0, 0, 1); transform: matrix3d(1.007, 0, 0, 0, 0, 0.99, 0, 0, 0, 0, 1, 0, 0.009, 0, 0, 1); }
+  57.77% { -webkit-transform: matrix3d(0.998, 0, 0, 0, 0, 1.003, 0, 0, 0, 0, 1, 0, -0.001, 0, 0, 1); transform: matrix3d(0.998, 0, 0, 0, 0, 1.003, 0, 0, 0, 0, 1, 0, -0.001, 0, 0, 1); }
+  60.47% { -webkit-transform: matrix3d(0.998, 0, 0, 0, 0, 1.004, 0, 0, 0, 0, 1, 0, -0.001, 0, 0, 1); transform: matrix3d(0.998, 0, 0, 0, 0, 1.004, 0, 0, 0, 0, 1, 0, -0.001, 0, 0, 1); }
+  69.36% { -webkit-transform: matrix3d(0.999, 0, 0, 0, 0, 1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.999, 0, 0, 0, 0, 1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  83.61% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+}
+
+@keyframes animation { 
+  0% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -300, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -300, 0, 0, 1); }
+  2.92% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -135.218, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -135.218, 0, 0, 1); }
+  3.37% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -114.871, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -114.871, 0, 0, 1); }
+  3.47% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -110.596, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -110.596, 0, 0, 1); }
+  4.58% { -webkit-transform: matrix3d(2.061, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -68.65, 0, 0, 1); transform: matrix3d(2.061, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -68.65, 0, 0, 1); }
+  5.69% { -webkit-transform: matrix3d(2.321, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -36.551, 0, 0, 1); transform: matrix3d(2.321, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -36.551, 0, 0, 1); }
+  5.76% { -webkit-transform: matrix3d(2.32, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -34.768, 0, 0, 1); transform: matrix3d(2.32, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -34.768, 0, 0, 1); }
+  7.41% { -webkit-transform: matrix3d(1.99, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.804, 0, 0, 1); transform: matrix3d(1.99, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.804, 0, 0, 1); }
+  7.51% { -webkit-transform: matrix3d(1.961, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.454, 0, 0, 1); transform: matrix3d(1.961, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -2.454, 0, 0, 1); }
+  7.88% { -webkit-transform: matrix3d(1.771, 0, 0, 0, 0, 1.062, 0, 0, 0, 0, 1, 0, 2.008, 0, 0, 1); transform: matrix3d(1.771, 0, 0, 0, 0, 1.062, 0, 0, 0, 0, 1, 0, 2.008, 0, 0, 1); }
+  8.68% { -webkit-transform: matrix3d(1.408, 0, 0, 0, 0, 1.181, 0, 0, 0, 0, 1, 0, 9.646, 0, 0, 1); transform: matrix3d(1.408, 0, 0, 0, 0, 1.181, 0, 0, 0, 0, 1, 0, 9.646, 0, 0, 1); }
+  10.03% { -webkit-transform: matrix3d(0.982, 0, 0, 0, 0, 1.333, 0, 0, 0, 0, 1, 0, 16.853, 0, 0, 1); transform: matrix3d(0.982, 0, 0, 0, 0, 1.333, 0, 0, 0, 0, 1, 0, 16.853, 0, 0, 1); }
+  10.85% { -webkit-transform: matrix3d(0.822, 0, 0, 0, 0, 1.398, 0, 0, 0, 0, 1, 0, 18.613, 0, 0, 1); transform: matrix3d(0.822, 0, 0, 0, 0, 1.398, 0, 0, 0, 0, 1, 0, 18.613, 0, 0, 1); }
+  11.53% { -webkit-transform: matrix3d(0.732, 0, 0, 0, 0, 1.439, 0, 0, 0, 0, 1, 0, 18.992, 0, 0, 1); transform: matrix3d(0.732, 0, 0, 0, 0, 1.439, 0, 0, 0, 0, 1, 0, 18.992, 0, 0, 1); }
+  12.22% { -webkit-transform: matrix3d(0.672, 0, 0, 0, 0, 1.469, 0, 0, 0, 0, 1, 0, 18.618, 0, 0, 1); transform: matrix3d(0.672, 0, 0, 0, 0, 1.469, 0, 0, 0, 0, 1, 0, 18.618, 0, 0, 1); }
+  14.18% { -webkit-transform: matrix3d(0.612, 0, 0, 0, 0, 1.501, 0, 0, 0, 0, 1, 0, 15.054, 0, 0, 1); transform: matrix3d(0.612, 0, 0, 0, 0, 1.501, 0, 0, 0, 0, 1, 0, 15.054, 0, 0, 1); }
+  14.37% { -webkit-transform: matrix3d(0.612, 0, 0, 0, 0, 1.501, 0, 0, 0, 0, 1, 0, 14.604, 0, 0, 1); transform: matrix3d(0.612, 0, 0, 0, 0, 1.501, 0, 0, 0, 0, 1, 0, 14.604, 0, 0, 1); }
+  19.23% { -webkit-transform: matrix3d(0.737, 0, 0, 0, 0, 1.371, 0, 0, 0, 0, 1, 0, 3.855, 0, 0, 1); transform: matrix3d(0.737, 0, 0, 0, 0, 1.371, 0, 0, 0, 0, 1, 0, 3.855, 0, 0, 1); }
+  20.01% { -webkit-transform: matrix3d(0.763, 0, 0, 0, 0, 1.338, 0, 0, 0, 0, 1, 0, 2.724, 0, 0, 1); transform: matrix3d(0.763, 0, 0, 0, 0, 1.338, 0, 0, 0, 0, 1, 0, 2.724, 0, 0, 1); }
+  23.05% { -webkit-transform: matrix3d(0.856, 0, 0, 0, 0, 1.211, 0, 0, 0, 0, 1, 0, 0.036, 0, 0, 1); transform: matrix3d(0.856, 0, 0, 0, 0, 1.211, 0, 0, 0, 0, 1, 0, 0.036, 0, 0, 1); }
+  25.75% { -webkit-transform: matrix3d(0.923, 0, 0, 0, 0, 1.114, 0, 0, 0, 0, 1, 0, -0.709, 0, 0, 1); transform: matrix3d(0.923, 0, 0, 0, 0, 1.114, 0, 0, 0, 0, 1, 0, -0.709, 0, 0, 1); }
+  26.94% { -webkit-transform: matrix3d(0.947, 0, 0, 0, 0, 1.078, 0, 0, 0, 0, 1, 0, -0.76, 0, 0, 1); transform: matrix3d(0.947, 0, 0, 0, 0, 1.078, 0, 0, 0, 0, 1, 0, -0.76, 0, 0, 1); }
+  31.58% { -webkit-transform: matrix3d(1.009, 0, 0, 0, 0, 0.987, 0, 0, 0, 0, 1, 0, -0.406, 0, 0, 1); transform: matrix3d(1.009, 0, 0, 0, 0, 0.987, 0, 0, 0, 0, 1, 0, -0.406, 0, 0, 1); }
+  31.73% { -webkit-transform: matrix3d(1.01, 0, 0, 0, 0, 0.986, 0, 0, 0, 0, 1, 0, -0.392, 0, 0, 1); transform: matrix3d(1.01, 0, 0, 0, 0, 0.986, 0, 0, 0, 0, 1, 0, -0.392, 0, 0, 1); }
+  37.32% { -webkit-transform: matrix3d(1.029, 0, 0, 0, 0, 0.958, 0, 0, 0, 0, 1, 0, -0.03, 0, 0, 1); transform: matrix3d(1.029, 0, 0, 0, 0, 0.958, 0, 0, 0, 0, 1, 0, -0.03, 0, 0, 1); }
+  38.15% { -webkit-transform: matrix3d(1.029, 0, 0, 0, 0, 0.958, 0, 0, 0, 0, 1, 0, -0.008, 0, 0, 1); transform: matrix3d(1.029, 0, 0, 0, 0, 0.958, 0, 0, 0, 0, 1, 0, -0.008, 0, 0, 1); }
+  42.35% { -webkit-transform: matrix3d(1.022, 0, 0, 0, 0, 0.969, 0, 0, 0, 0, 1, 0, 0.03, 0, 0, 1); transform: matrix3d(1.022, 0, 0, 0, 0, 0.969, 0, 0, 0, 0, 1, 0, 0.03, 0, 0, 1); }
+  48.9% { -webkit-transform: matrix3d(1.007, 0, 0, 0, 0, 0.99, 0, 0, 0, 0, 1, 0, 0.009, 0, 0, 1); transform: matrix3d(1.007, 0, 0, 0, 0, 0.99, 0, 0, 0, 0, 1, 0, 0.009, 0, 0, 1); }
+  57.77% { -webkit-transform: matrix3d(0.998, 0, 0, 0, 0, 1.003, 0, 0, 0, 0, 1, 0, -0.001, 0, 0, 1); transform: matrix3d(0.998, 0, 0, 0, 0, 1.003, 0, 0, 0, 0, 1, 0, -0.001, 0, 0, 1); }
+  60.47% { -webkit-transform: matrix3d(0.998, 0, 0, 0, 0, 1.004, 0, 0, 0, 0, 1, 0, -0.001, 0, 0, 1); transform: matrix3d(0.998, 0, 0, 0, 0, 1.004, 0, 0, 0, 0, 1, 0, -0.001, 0, 0, 1); }
+  69.36% { -webkit-transform: matrix3d(0.999, 0, 0, 0, 0, 1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(0.999, 0, 0, 0, 0, 1.001, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  83.61% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); }
+  100% { -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); } 
+}
+
+@keyframes anim {  0%  { left: 0px;  top: 0px;}   25% {left: 100px; top: 0px;}  50% {left: 100px; top: 100px;} 75% {left: 0px;  top: 100px;}  100% {left: 0px;  top: 0px;} }
+@-webkit-keyframes anim {  0%  {left: 0px;  top: 0px;}  25% {left: 100px; top: 0px;}  50% {left: 100px; top: 100px;}  75% {left: 0px;  top: 100px;}  100% {left: 0px;  top: 0px;} }
+@-moz-keyframes anim {  0%  {left: 0px;  top: 0px;}  25% {left: 100px; top: 0px;}  50% {left: 100px; top: 100px;}  75% {left: 0px;  top: 100px;}  100% {left: 0px;  top: 0px;} }
+@-o-keyframes anim {  0%  {left: 0px;  top: 0px;}  25% {left: 100px; top: 0px;}  50% {left: 100px; top: 100px;}  75% {left: 0px;  top: 100px;}  100% {left: 0px;  top: 0px;} }
+
+body {
+	font: 15px/1.5 Arial, Helvetica, sans-serif, Nexa-Light, Fortheenas_01, Nexa Bold;;
+	padding: 0;
+	margin: 0;
+	background-color: #ffffff;
+}
+	
+#header {top: 70px; padding-left: 100px;width: 100%; height: 80px; z-index: 999; position:absolute; }
+#navbar {padding-left: 360px; width: 1000px; height: 80px; float: right; position: absolute;}
+#navbar>li { width: 170px; list-style: none; float: left; border-left: 0px solid white;}
+li>a { line-height: 80px; text-align: center; font-family: cursive; font-family: 'Nexa_Bold'; text-transform: uppercase; font-size: 12px; color: #ffffff;text-decoration: none;}
+li>a:hover,
+li>a:focus {color:#333;}
+#logo img { padding-left: 15px; top: -20px; width: 220px; height: 80px; float: left; position: absolute;}
+#Home { 
+		width: 95%;
+		margin: auto;
+		height: 2500px;
+		position: relative;
+		padding-left: 100px;
+	}
+	#webhome img{ position: absolute; left: 400px; width: 1000px; height: 800px; z-index: 1;}	
+	#Home h1{ font-size: 35px; color: #FF0000; }
+	#HomeBox { position:absolute; top: 270px; padding-left: 70px;  height:400px;  z-index: 1;}
+	#HomeBox .Box { position:relative; float: right; width: 30px; padding-left: 250px; border: 3px solid #FF0000; border-left-color: #FF0000; height:290px; z-index: 2;
+		-webkit-animation: anim 5s linear; -moz-animation: anim 5s linear ; -o-animation: anim 5s linear ; animation: anim 5s linear ;}
+	#HomeBox2 {position:absolute; top: 480px; padding-left: 354px;  height:80px;  z-index: 1;}
+	#HomeBox2 .Box2 {position:relative; float: right; width: 8px; 	background-color: #FF0000;	border: 3px solid #FF0000; border-left-color: #FF0000; height:80px; z-index: 2;}
+	#DPCMSI {position:absolute; top: 325px; left: 185px; z-index: 3;}
+	#DPCMSI p{ font-family: 'Fortheenas_01'; font-style: normal; line-height: 30px;font-weight: 500; font-size: 25px; color: #000000; text-align: right}
+	#DPCMSI2 {position:absolute; top: 495px; left: 472px; z-index: 3;}
+	#DPCMSI2 p{ font-family: 'Nexa_Light';  font-weight: bolder; letter-spacing: 1.5px; font-style: normal; font-size: 12px; color: #ffffff; text-align: right}
+	#BE {position:absolute; top: 550px; left: 80px;}
+	#BE p{ font-size: 130px; font-weight: bolder; color: #000000; }
+	#BE2 {position:absolute; top: 650px; left: 80px;}
+	#BE2 p{ font-size: 130px; font-weight: bolder; color: #000000; }
+	#TituloBuscando {position:absolute; top: 830px; left: 400px; z-index: 5;}
+	#TituloBuscando p { font-family: 'Fortheenas_01'; font-size: 25px; font-weight: lighter; color: #000000; }
+	#TituloconstruyePROPIO { position: absolute; top: 1050px; float: left; vertical-align: middle; padding-left: 450px; }
+	#TituloconstruyePROPIO p{ font-family: Fortheenas_01; font-style: normal; font-weight: lighter; text-align: center; font-size: 54px; color: #000000;}
+	#TituloconstruyeEntuPROPIO { position: absolute; top: 1100px; float: left; vertical-align: middle; padding-left: 320px; }
+	#TituloconstruyeEntuPROPIO p{ font-family: 'Nexa_Bold'; font-style: normal; font-weight: 600; text-align: center; font-size: 54px; color: #000000;}
+	#TituloconstruyeTERRENO { position: absolute; top: 1100px; float: left; vertical-align: middle; padding-left: 710px; }
+	#TituloconstruyeTERRENO p{ font-family: Fortheenas_01; font-style: normal; font-weight: lighter; text-align: center; font-size: 54px; color: #000000;}
+	#construyePROPIO { position: absolute; top: 1200px; float: left; vertical-align: middle; padding-left: 250px; }
+	#construyePROPIO .constPropi p{ font-family: Fortheenas_01; font-style: normal; font-weight: lighter; text-align: center; font-size: 50px; color: #000000;}
+	#construyePROPIO .constPropiTerreno p{ font-family: Fortheenas_01; font-style: normal; font-weight: lighter; line-height: 10px; text-align: center; font-size: 10px; color: #000000;}
+	#construyePROPIO .constPropParrafo p{ font-family: 'Nexa_Light'; font-weight: lighter; text-align: center; line-height: 20px;font-size: 16px; color: #000000;}
+	#construyePROPIO .constPropVisita p{ font-family: Fortheenas_01; font-weight: lighter; text-align: center; font-size: 30px; color: #000000;}
+	#Titulosolicita { position: absolute; top: 1310px; float: left; vertical-align: middle; padding-left: 400px; }
+	#Titulosolicita p { font-family: 'Fortheenas_01'; font-style: normal; font-weight: lighter; text-align: center; font-size: 30px; color: #000000;}
+	#Titulogratuita { position: absolute; top: 1310px; float: left; vertical-align: middle; padding-left: 760px; }
+	#Titulogratuita p { font-family: 'Fortheenas_01_Bold'; font-style: normal; font-weight: normal; text-align: center; font-size: 30px; color: #000000;}
+	#construyePROPIO form {
+		float: left;
+		margin-top: 15px;
+		margin: auto;
+		overflow: hidden;
+		padding-left: 500px;
+	}
+	/*linea debajo del boton visita*/
+	#lineaVisita {	position: absolute; top: 1378px; vertical-align: middle; padding-left: 600px; }
+	#lineaVisita hr { margin-left: auto; margin-right: auto; padding-left: 60px; position: absolute; height: 1px; top:45px; border: 0; width: 20px; background-color: red; z-index: 99;	}
+	#visitaTecnica {
+		position: absolute;
+		top: 1380px;
+		float: left;
+		vertical-align: middle;
+		padding-left: 550px;
+	}
+	
+	#visitaTecnica button{
+		position: absolute;
+		float: left;
+		box-sizing: content-box;
+		background-color: #ffffff;
+		border: 1px solid #FF0000;
+		border-left-color: #FF0000;
+		float: left;
+		font-family: 'Cabin', helvetica, arial, sans-serif;
+		font-size: 11px;
+		font-weight: 400;
+		/*---altura de letra del boton-----*/
+		height: 32px;
+		width: 50px;
+		text-transform: uppercase;
+		line-height: 30px;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		/*largo del boton*/
+		width: 180px;
+	}
+	
+	#visitTecnica button:hover{}
+	#visitaTecnica button:focus {}
+	#visitaTecnica button:active {	}	
+	/*--------Empieza Proyectos--------*/
+	#Proyectos{
+		width: 1400px;
+		margin: auto;
+		height: 800px;
+		position: absolute;
+		top: 1550px;
+		background: #F5F5F5;
+	}
+	
+	#NuestrosProyectos { position:absolute; top: 1600px; left: 100px; z-index: 2; }
+	#NuestrosProyectos p{ font-family: 'Nexa_Bold'; font-style: normal; font-weight: lighter; font-size: 20px; color: #000000; text-align: right}
+	#lineaProyectos { position: absolute; top: 1600px; vertical-align: middle; padding-left: 370px; }
+	#lineaProyectos hr { margin-left: auto; margin-right: auto; padding-left: 13px; position: absolute; height: 1px; top: 16px; border: 0; width: 20px; background-color: red; z-index: 99;	}
+	#Proyectos p { font-size: 50px; color: #ffffff; }
+	#proyectoStratto img{ position: absolute; top: 1700px; left: 270px; width: 270px; height: 350px; z-index: 1;}
+	#proyectoStratto img:hover{ background-color: white; opacity: .5;position: absolute; top: 1700px; left: 270px; width: 270px; height: 350px; z-index: 1;}
+	#HeaderStratto { transform: rotate(270deg); position: absolute; top: 2016px; left: 232px;  z-index: 1;}
+	#HeaderStratto hr { height: 1px; border: 0; background-color: red; }
+	#proyectoMorante img{ position: absolute; top: 2062px; left: 270px; width: 270px; height: 400px; z-index: 1;}
+	#proyectoMorante img:hover{ background-color: black; opacity: .5;position: absolute; top: 2062px; left: 270px; width: 270px; height: 400px; z-index: 1;}
+	#HeaderMorante { font-family: 'Nexa_Bold_5'; transform: rotate(270deg); position: absolute; top: 2426px; left: 230px;  z-index: 1;}
+	#HeaderMorante hr { height: 1px; border: 0; background-color: red; }
+	#proyectoLaGavia img{ position: absolute; top: 1700px; left: 552px; width: 600px; height: 762px; z-index: 1;}
+	#proyectoLaGavia img:hover{ background-color: white; opacity: .5; position: absolute; top: 1700px; left: 552px; width: 600px; height: 762px; z-index: 1;}
+	#HeaderLaGavia { transform: rotate(270deg); position: absolute; top: 2420px; left: 1142px;  z-index: 1;}
+	#HeaderLaGavia hr { height: 1px; border: 0; background-color: red; }
+	/*--------Empieza Servicios--------*/
+	#Servicios {position:absolute; top: 2590px; padding-left: 360px;  height:90px;  z-index: 2;}
+	#Servicios .ServiciosBox {position:relative; float: right; width: 30px; padding-left: 600px;  background-color: #F5F5F5; height:90px; z-index: 2;}
+	#NuestrosServicios {position:absolute; top: 2600px; left: 450px; z-index: 3;}
+	#NuestrosServicios h2{ text-transform: uppercase; font-family: Fortheenas_01; font-style: normal; font-weight: lighter; text-align: center; font-size: 40px; color: #000000;}
+	#JardinColgante img{ position: absolute; top: 2650px; width: 1375px; height: 450px; z-index: 1;}
+	/*--------las macetas-------*/
+	#ServicioConstruccion {
+		position: absolute;
+		top: 2750px;
+		float: right;
+		vertical-align: middle;
+		padding-left: 230px;
+		z-index: 99;
+	}
+	#ServicioConstruccion button{
+		position: absolute;
+		background-color: #000000;
+		border: 1px solid #000000;
+		border-left-color: #000000;
+		float: right;
+		font-family: 'Cabin', helvetica, arial, sans-serif;
+		font-size: 15px;
+		color: #ffffff;
+		font-weight: 400;
+		/*---altura de letra del boton-----*/
+		height: 70px;
+		vertical-align: top;
+		text-transform: uppercase;
+		line-height: 20px;
+		margin: 0;
+		padding-left: 60px;
+		padding-top: 25px;
+		/*largo del boton*/
+		width: 220px;
+	}
+	#ServicioMantenimiento {
+		position: absolute;
+		top: 2820px;
+		float: right;
+		vertical-align: middle;
+		padding-left: 490px;
+		z-index: 99;
+	}
+	#ServicioMantenimiento button{
+		position: absolute;
+		background-color: #000000;
+		border: 1px solid #000000;
+		border-left-color: #000000;
+		vertical-align: top;
+		float: right;
+		text-align: right;
+		font-family: 'Cabin', helvetica, arial, sans-serif;
+		font-size: 15px;
+		color: #ffffff;
+		font-weight: 400;
+		/*---altura de letra del boton-----*/
+		height: 70px;
+		text-transform: uppercase;
+		margin: 0;
+		padding-left: 5px;
+		padding-right: 10px;
+		padding-top: 18px;
+		/*largo del boton*/
+		width: 220px;
+	}
+	#ServicioInmobiliario {
+		position: absolute;
+		top: 2890px;
+		float: right;
+		vertical-align: bottom;
+		padding-left: 750px;
+		z-index: 99;
+	}
+	#ServicioInmobiliario button{
+		position: absolute;
+		background-color: #000000;
+		border: 1px solid #000000;
+		border-left-color: #000000;
+		float: right;
+		text-align: right;
+		font-family: 'Cabin', helvetica, arial, sans-serif;
+		vertical-align: bottom;
+		font-size: 15px;
+		color: #ffffff;
+		font-weight: 400;
+		/*---altura de letra del boton-----*/
+		height: 75px;
+		text-transform: uppercase;
+		margin: 0;
+		padding-right: 10px;
+		padding-left: 60px;
+		padding-top: 20px;
+		/*largo del boton*/
+		width: 220px;
+	}
+	#ServicioInversion {
+		position: absolute;
+		top: 2960px;
+		float: right;
+		vertical-align: middle;
+		padding-left: 1000px;
+		z-index: 99;
+	}
+	#ServicioInversion button{
+		position: absolute;
+		background-color: #000000;
+		border: 1px solid #000000;
+		border-left-color: #000000;
+		float: right;
+		font-family: 'Cabin', helvetica, arial, sans-serif;
+		font-size: 15px;
+		color: #ffffff;
+		font-weight: 400;
+		/*---altura de letra del boton-----*/
+		height: 75px;
+		text-transform: uppercase;
+		line-height: 30px;
+		margin: 0;
+		padding-left: 65px;
+		padding-top: 25px;
+		/*largo del boton*/
+		width: 220px;
+	}
+	
+	
+	
+	/*--------Empieza Nosotros--------*/
+	#sobrenosotros-constructora-en-quito {
+		height: 300px;
+		position: absolute;
+		background: #ffffff;
+		top: 3100px;
+	}
+	#SobreNosotrosHeader {position:absolute; top: 3150px; left: 445px; z-index: 3;}
+	#SobreNosotrosHeader p { text-transform: uppercase; font-family: Fortheenas_01; font-style: normal; font-weight: lighter; text-align: center; font-size: 40px; color: #000000;}
+	#SobreNosotrosCuerpo { padding-left: 130px; width: 550px; height: 200px; position:absolute; top: 3270px; left: 430px; z-index: 3;}
+	#SobreNosotrosCuerpo p {	font-family: 'Nexa_Light'; line-height: 16px; font-weight: lighter; text-align: justify; font-size: 14px; color: #000000;}
+	#SobreNosotroslogo img{ padding-left: 200px; top: 3250px; width: 220px; height: 140px; float: left; position: absolute;}
+	#Mapa-google {
+		width: 1400px;
+		position: absolute;
+		background: #ffffff;
+		top: 3540px;
+	}
+	
+	#final {
+		margin: auto;
+		height: 225px;
+		width: 1400px;
+		position: absolute;
+		background: #000000;
+		background-color: #000000; 
+		top: 3890px;
+		z-index: 1;
+	}
+	
+	#ComunicateNosotrosHeader {position:absolute; top: 3890px; left: 230px; z-index: 3; padding-top: 23px; }
+	#ComunicateNosotrosHeader h2{ text-transform: uppercase; font-family: 'Nexa_Light'; top:10px; font-style: normal; font-weight: bolder; text-align: left; font-size: 25px; color: #ffffff;}
+	#ComunicateNosotrosHeader2 {position:absolute; top: 3912px; left: 230px; z-index: 3; padding-top: 30px; }
+	#ComunicateNosotrosHeader2 h2{ text-transform: uppercase; font-family: 'Nexa_Light'; top:10px; font-style: normal; font-weight: bolder; text-align: left; font-size: 25px; color: #ffffff;}
+	#lineaComunicateNostros { position: absolute; top: 3957px; vertical-align: middle; padding-left: 405px; }
+	#lineaComunicateNostros hr { margin-left: auto; margin-right: auto; padding-left: 13px; position: absolute; height: 1px; top: 16px; border: 0; width: 40px; background-color: red; z-index: 99;	}
+	#logo-blanco-negro img{ padding-left: 230px; top: 4020px; width: 180px; height: 70px; float: left; position: absolute; z-index: 99;}
+	#LlamanosFooter {position:absolute; top: 3910px; left: 650px; z-index: 3; padding-top: 30px; }
+	#LlamanosFooter p{ text-transform: uppercase; font-family: 'Nexa_Bold'; top:10px; font-style: normal; font-weight: 800; text-align: right; font-size: 10px; color: #ffffff;}
+	#LlamanosFooter .telefono p{ text-transform: uppercase; font-family: 'Nexa_Bold'; top:10px; font-style: normal; font-weight: 800; text-align: right; font-size: 12px; color: #ffffff;}
+	#LlamanosFooter .comparte p{ text-transform: uppercase; font-family: 'Nexa_Bold'; padding-right: 25px; top:10px; font-style: normal; font-weight: 800; text-align: right; font-size: 9px; color: #ffffff;}
+	#lineaLlamanosFooter { position: absolute; top: 3930px; vertical-align: middle; padding-left: 620px; }
+	#lineaLlamanosFooter hr { margin-left: auto; margin-right: auto; padding-left: 13px; position: absolute; height: 1px; top: 16px; border: 0; width: 22px; background-color: #ffffff; z-index: 99;	}
+	#lineaLlamanosFooterComparte { position: absolute; top: 4065px; vertical-align: middle; padding-left: 620px; }
+	#lineaLlamanosFooterComparte hr { margin-left: auto; margin-right: auto; padding-left: 13px; position: absolute; height: 1px; top: 16px; border: 0; width: 22px; background-color: #ffffff; z-index: 99;	}
+	#icono-facebook img{ padding-left: 720px; top: 4065px; width: 12px; height: 20px; float: left; position: absolute; z-index: 99;}
+	
+	#EmailFooter {position:absolute; top: 3910px; left: 870px; z-index: 3; padding-top: 30px; }
+	#EmailFooter p{ font-family: 'Nexa_Bold'; top:10px; font-style: normal; font-weight: 800; text-align: right; font-size: 10px; color: #ffffff;}
+	#EmailFooter .correo p{ font-family: 'Nexa_Bold'; top:10px; font-style: normal; font-weight: 800; text-align: right; font-size: 12px; color: #ffffff;}
+	#EmailFooter .youtube p{ text-transform: uppercase; font-family: 'Nexa_Bold'; padding-right: 35px; top:10px; font-style: normal; font-weight: 800; text-align: right; font-size: 9px; color: #ffffff;}
+	#EmailContactoBoton {
+		position: absolute;
+		top: 4016px;
+		float: left;
+		vertical-align: middle;
+		padding-left: 888px;
+		z-index: 99;
+	}
+	
+	#EmailContactoBoton button{
+		position: absolute;
+		float: left;
+		box-sizing: content-box;
+		color: #ffffff;
+		background-color: #000000;
+		border: 1px solid #ffffff;
+		border-left-color: #ffffff;
+		float: left;
+		font-family: 'Cabin', helvetica, arial, sans-serif;
+		font-size: 9px;
+		font-weight: 400;
+		/*---altura de letra del boton-----*/
+		height: 25px;
+		text-transform: uppercase;
+		line-height: 20px;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		/*largo del boton*/
+		width: 110px;
+	}
+	#lineaContactoEmailFooter { position: absolute; top: 3930px; vertical-align: middle; padding-left: 870px; }
+	#lineaContactoEmailFooter hr { margin-left: auto; margin-right: auto; position: absolute; height: 1px; top: 16px; border: 0; width: 35px; background-color: #ffffff; z-index: 99;	}	
+	#lineaEmailFooter { position: absolute; top: 4070px; vertical-align: middle; padding-left: 870px; }
+	#lineaEmailFooter hr { margin-left: auto; margin-right: auto; padding-left: 13px; position: absolute; height: 1px; top: 16px; border: 0; width: 22px; background-color: #ffffff; z-index: 99;	}
+	#lineaYoutubeFooter { position: absolute; top: 4033px; vertical-align: middle; padding-left: 920px; }
+	#lineaYoutubeFooter hr { margin-left: auto; margin-right: auto; padding-left: 13px; position: absolute; height: 1px; top: 16px; border: 0; width: 35px; background-color: #ffffff; z-index: 99;	}
+	#YoutubeFooterlogo img{ padding-left: 980px; top: 4065px; width: 20px; height: 25px; float: left; position: absolute; z-index: 99;}
+	
+	#VisitanosFooter {position:absolute; top: 3910px; left: 1120px; z-index: 3; padding-top: 30px; }
+	#VisitanosFooter p{ text-transform: uppercase; font-family: 'Nexa_Bold'; font-style: normal; font-weight: 800; text-align: right; font-size: 10px; color: #ffffff;}
+	#VisitanosFooter .direccion p{ text-transform: uppercase; font-family: 'Nexa_Bold'; font-style: normal; font-weight: 800; text-align: right; font-size: 10px; color: #ffffff;}
+	#VisitanosFooter .instagram p{ text-transform: uppercase; font-family: 'Nexa_Bold'; padding-right: 15px; font-style: normal; font-weight: 800; text-align: right; font-size: 9px; color: #ffffff;}
+	#lineaVisitanosFooter { position: absolute; top: 3930px; vertical-align: middle; padding-left: 1100px; }
+	#lineaVisitanosFooter hr { margin-left: auto; margin-right: auto; position: absolute; height: 1px; top: 16px; border: 0; width: 40px; background-color: #ffffff; z-index: 99;	}
+	#lineaVisitanosFooterInstagram { position: absolute; top: 4070px; vertical-align: middle; padding-left: 1105px; }
+	#lineaVisitanosFooterInstagram hr { margin-left: auto; margin-right: auto; padding-left: 13px; position: absolute; height: 1px; top: 16px; border: 0; width: 22px; background-color: #ffffff; z-index: 99;	}
+	#VisitanosFooterInstagramlogo img{ padding-left: 1215px; top: 4065px; width: 15px; height: 25px; float: left; position: absolute; z-index: 99;}
+	#DesingbyMonkey {position:absolute; top: 4100px; left: 100px; z-index: 3; }
+	#DesingbyMonkey p{ text-transform: uppercase; font-family: 'Nexa_Bold'; font-style: normal; font-weight: 800; text-align: right; font-size: 10px; color: #ffffff;}
+	#Contactanos{
+		width: 95%;
+		margin: auto;
+		height: 1000px;
+		position: absolute;
+		background: #ffffff;
+		top: 4500px;
+	}
+	
+	#Contactanos p{
+		font-size: 20px;
+		color: #ffffff;
+	}
+
+.webdesigntuts-workshop {
+	background: #ffffff;
+	height: 100%;
+	/*manejar la ubicacion de la barra 700px*/
+	position: absolute;
+	left: 380px;
+	top: 700px;
+	text-align: center;
+	width: 100%;
+}
+
+.webdesigntuts-workshop:after {
+	background: #000;
+	background: linear-gradient(left, #151515, #000, #151515);	
+	top: 1091px;
+}
+
+.webdesigntuts-workshop form {
+	/*poner la altura del search*/
+	font-size: 0px;
+	margin: 200px auto 0;
+	padding: 20px;
+	position: relative;
+	z-index: 1;
+}
+
+.webdesigntuts-workshop input {
+	/*color por dentro de la barra*/
+	background: #ffffff;	
+	background: linear-gradient(#ffffff, #ffffff);	
+	border: 1px solid #444;
+	box-shadow: 0 2px 0 #ffffff;
+	color: #000000;
+	display: block;
+	float: left;
+	font-family: 'Cabin', helvetica, arial, sans-serif;
+	font-size: 25px;
+	font-weight: 400;
+	/*-------------para hacer mas alta la barra buscadora-----------*/
+	height: 40px;
+	margin: 0;
+	padding: 0 10px;
+	text-shadow: 0 -1px 0 #000;
+	/*------------para hacerlo mas larga la barra buscadora------------*/
+	width: 500px;
+}
+
+.ie .webdesigntuts-workshop input {
+	line-height: 80px;
+}
+
+.webdesigntuts-workshop input:-webkit-input-placeholder { color: #888; }
+.webdesigntuts-workshop input:-moz-placeholder { color: #888; }
+.webdesigntuts-workshop input:focus {
+	/*-----Borde de la barra de busqueda-----*/
+	background: linear-gradient(#333933, #222922);
+	border-color: #fff;
+	box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
+	color: #efe;
+	outline: none;
+}
+.webdesigntuts-workshop input:focus:-webkit-input-placeholder { color: #efe; }
+.webdesigntuts-workshop input:focus:-moz-placeholder { color: #efe; }
+
+.webdesigntuts-workshop button {
+	background: #222;
+	background: linear-gradient(#333, #222);
+	box-sizing: content-box;
+	border: 1px solid #444;
+	border-left-color: #000;
+	box-shadow: 0 2px 0 #000;
+	color: #fff;
+	display: block;
+	float: left;
+	font-family: 'Cabin', helvetica, arial, sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	/*---altura de letra del boton-----*/
+	height: 36px;
+	width: 50px;
+	text-transform: uppercase;
+	line-height: 30px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	text-shadow: 0 -1px 0 #000;
+	/*largo del boton*/
+	width: 150px;
+}
+
+.webdesigntuts-workshop button:focus {
+	background: #292929;
+	background: linear-gradient(#393939, #292929);
+	/*-------Animacion del boton---------*/
+	color: #fff;
+	outline: none;
+}
+
+.webdesigntuts-workshop button:active {
+	background: #292929;
+	background: linear-gradient(#393939, #292929);
+	box-shadow: 0 1px 0 #000, inset 1px 0 1px #222;
+	top: 1px;
+}
+
+@keyframes glow {
+    0% {
+		border-color: #393;
+		box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
+    }	
+    100% {
+		border-color: #6f6;
+		box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 #000;
+    }
+}	
+@media screen and (max-width:1260px){
+	#navbar{width: 800px;}
+	#navbar>li{width: 150px;}
+	#logo>img{width: 150px; height: 80px;}
+}
+
+@media screen and (max-width: 1040px){
+	#header{width: 100%; height: 60px;position: relative;top:80px;}
+	#navbar{width: 100%; height: 60px;float: right;}
+	#navbar>li{width: 18%;}
+	li>a{line-height: 60px; font-size: 16px;}
+	#logo{width: 200px; height: 80px; float: left; padding-left: 40px;position:absolute; top: -80px;}
+}
+
+@media screen and (max-width: 480px){
+	#header{width: 100%; height: 60px; background: #fff;box-shadow: 0px 3px 6px gray;}
+	#navbar{width: 100%; height: 60px;float: none;}
+	#navbar>li{width: 100%; list-style: none; float: none;border-bottom: 1px solid white;}
+	li>a{display: block; color: black;line-height: 80px; text-align: center; font-family:
+		cursive;font-size: 16px;}
+		#logo{width: 200px; height: 80px; float: left; padding-left: 40px;}
+		
+	#Home {
+		width: 100%;
+		margin: auto;
+		height: 1500px;
+		position: relative;
+		top: 450px;
+		background: #000000;
+	}
+	
+.webdesigntuts-workshop {
+	background: #ffffff;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+.webdesigntuts-workshop:before {
+	background: #444;
+	background: linear-gradient(left, #151515, #444, #151515);
+	top: 192px;
+}
+
+.webdesigntuts-workshop:after {
+	background: #000;
+	background: linear-gradient(left, #151515, #000, #151515);	
+	top: 191px;
+}
+
+.webdesigntuts-workshop form {
+	background: #ffffff;
+	background: linear-gradient(#ffffff, #ffffff);
+	border: 1px solid #000;
+	border-radius: 5px;
+	box-shadow: inset 0 0 0 1px #ffffff;
+	display: inline-block;
+	font-size: 0px;
+	/*poner la altura del search*/
+	margin: 50px auto 0;
+	padding: 20px;
+	position: relative;
+	z-index: 1;
+}
+
+.webdesigntuts-workshop input {
+	/*color por dentro de la barra*/
+	background: #ffffff;	
+	background: linear-gradient(#ffffff, #ffffff);	
+	border: 1px solid #444;
+	box-shadow: 0 2px 0 #ffffff;
+	color: #000000;
+	display: block;
+	float: left;
+	font-family: 'Cabin', helvetica, arial, sans-serif;
+	font-size: 25px;
+	font-weight: 400;
+	height: 50px;
+	margin: 0;
+	padding: 0 10px;
+	text-shadow: 0 -1px 0 #000;
+	/*para hacerlo mas amplio la barra*/
+	width: auto;
+}
+
+.ie .webdesigntuts-workshop input {
+	line-height: 80px;
+}
+
+.webdesigntuts-workshop input:-webkit-input-placeholder { color: #888; }
+.webdesigntuts-workshop input:-moz-placeholder { color: #888; }
+.webdesigntuts-workshop input:focus {
+	animation: glow 800ms ease-out infinite alternate;
+	background: #ffffff;
+	background: linear-gradient(#333933, #222922);
+	border-color: #393;
+	box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
+	color: #efe;
+	outline: none;
+}
+
+.webdesigntuts-workshop input:focus:-webkit-input-placeholder { color: #efe; }
+.webdesigntuts-workshop input:focus:-moz-placeholder { color: #efe; }
+.webdesigntuts-workshop button {
+	background: #222;
+	background: linear-gradient(#333, #222);
+	box-sizing: content-box;
+	border: 1px solid #444;
+	border-left-color: #000;
+	border-radius: 0 5px 5px 0;
+	box-shadow: 0 2px 0 #000;
+	color: #fff;
+	display: block;
+	float: left;
+	font-family: 'Cabin', helvetica, arial, sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	/*altura del boton*/
+	height: 45px;
+	line-height: 40px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	text-shadow: 0 -1px 0 #000;
+	/*largo del boton*/
+	/*width: 100px;*/
+}	
+.webdesigntuts-workshop button:focus {
+	background: #292929;
+	background: linear-gradient(#393939, #292929);
+	color: #5f5;
+	outline: none;
+}
+
+.webdesigntuts-workshop button:active {
+	background: #292929;
+	background: linear-gradient(#393939, #292929);
+	box-shadow: 0 1px 0 #000, inset 1px 0 1px #222;
+	top: 1px;
+}

@@ -25,24 +25,19 @@
                             <p:outputPanel>
                                 <h:outputText value="Buscar:"/>
                                 <p:inputText id="globalFilter" onkeyup="PF('tablaclienteBuscar').filter()"
-                                             style="width: 350px;" placeholder="Buscar por ciudad"/>
+                                             style="width: 500px;" placeholder="Buscar por ciudad"/>
                             </p:outputPanel>
                         </f:facet>
                         
-                        <p:column headerText="Codigo" >
-                            <h:outputText value="#{ct.codCliente}"/>
-                        </p:column>
                         
                         <p:column headerText="Nombre del Inmueble" sortBy="#{ct.nombres}">
-                            <h:outputText value="#{ct.nombres} #{ct.apellidos}"/>
+                            <h:outputText value="#{ct.nombres} "/>
                         </p:column>
                         
                         
                         <p:column headerText="direccion" filterBy="#{ct.direccion}">
                             <h:outputText value="#{ct.direccion}"/>
                         </p:column>
-                        
-                        
                         
                         
                         

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated Dec 4, 2018 2:47:11 AM by Hibernate Tools 4.3.1 -->
+<!-- Generated May 15, 2019 11:47:07 PM by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="sys.model.Cliente" table="cliente" catalog="facturacion2" optimistic-lock="version">
         <id name="codCliente" type="java.lang.Integer">
@@ -12,7 +12,7 @@
             <column name="nombres" length="40" not-null="true" />
         </property>
         <property name="apellidos" type="string">
-            <column name="apellidos" length="40" not-null="true" />
+            <column name="apellidos" length="55" not-null="true" />
         </property>
         <property name="direccion" type="string">
             <column name="direccion" length="150" not-null="true" />

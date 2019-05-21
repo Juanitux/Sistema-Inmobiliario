@@ -1,0 +1,198 @@
+*{ margin: 0px; padding: 0px; }
+@font-face {
+    font-family: 'Nexa_Light';
+	src: url('../fuentes/Nexa_Light.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fortheenas_01';
+	src: url('../fuentes/Fortheenas_01.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Fortheenas_01_Bold';
+	src: url('../fuentes/Fortheenas_01_Bold.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Fortheenas_01_Bold_Italic';
+	src: url('../fuentes/Fortheenas_01_Bold_Italic.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Fortheenas_01_Italic';
+	src: url('../fuentes/Fortheenas_01_Italic.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Nexa_Bold';
+	src: url('../fuentes/Nexa_Bold.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+	
+body { 
+		font: 15px/1.5 Arial, Helvetica, sans-serif;
+		padding: 0;
+		margin: 0;
+		background-color: #ffffff;
+	}
+
+	.container{
+		width: 100%;
+		margin: auto;
+	}
+	
+	#header { border: 0px; height: 100px; width: 100%; z-index: 10; background: #F2F2F2; position: fixed; z-index: 9999;}
+	#header a{ color:#000000; font-family: 'Nexa_Bold'; text-decoration: none; text-transform: uppercase; font-size: 11px; font-weight:bold; }
+	#header ul{ margin: 10px; padding: 25px; padding-right: 70px;}
+	#header nav{ float: right; }
+	#header li{ float:left; display: inline; padding: 32px 72px 0px 35px; }
+	#header .logo img{ float: left; position: absolute; padding-left: 110px; width: 240px; height: 100px; }
+	li>a:hover,
+	li>a:focus {background: #ffffff; color:#333;}
+
+	#ConstruccionWeb {position: absolute; float: left; left: 200px; top: 200px; height: 200px;}
+	#ConstruccionWeb .ConstruccionWebHeader { position: absolute;  float: left;}
+	#ConstruccionWeb .ConstruccionWebHeader p{ font-family: Fortheenas_01; font-style: normal; font-weight: lighter; text-align: center; text-transform: uppercase; line-height: 40px; font-size: 40px; color: #000000;}
+	#ConstruccionWeb .ConstruccionWebHeader2 { position: absolute; top:40px; float: left;}
+	#ConstruccionWeb .ConstruccionWebHeader2 p{ font-family: 'Nexa_Bold'; text-transform: uppercase; font-style: normal; font-weight: lighter; text-align: center; line-height: 40px; font-size: 40px; color: #000000;}
+	#ConstruccionWeb .LineaConstruccionWebHeader {position: absolute; float: left; top: 44px; left: 320px;}
+	#ConstruccionWeb .LineaConstruccionWebHeader hr {margin-left: auto; margin-right: auto; padding-left: 13px; position: absolute; height: 1px; top: 16px; border: 0; width: 490px; background-color: #585858; z-index: 99;}
+
+	#ConstruccionWeb .ProyectosInmobiliarios {position:absolute; top: 150px; width: 327px; height:349px; color: #000000; background-color: #000000; border-color: #000000;   z-index: 2;}
+	/*#ConstruccionWeb .ProyectosInmobiliarios form {position:absolute; float: right; color: #ffffff;  background-color: #000000; width: 217px; height:100px; z-index: 2;}*/
+	#ConstruccionWeb .Casas form {position:absolute; left: 18px; z-index: 3;}
+ 	#ConstruccionWeb .txtCasas {position:absolute; top: 40px; left: 18px; z-index: 3;}
+	#ConstruccionWeb .txtCasas p{ font-family: Fortheenas_01; font-style: normal; font-weight: normal; text-align: center; font-size: 27px; color: #ffffff;}
+	#ConstruccionWeb .numeroCasas {position:absolute; top: 20px; left: 240px; z-index: 3;}
+	#ConstruccionWeb .numeroCasas p{ font-family: Fortheenas_01; font-style: normal; font-weight: lighter; text-align: center; font-size: 47px; color: red;}
+	#ConstruccionWeb .LineaCasas{position: absolute; float: left; top: 80px; left: 18px;}
+	#ConstruccionWeb .LineaCasas hr {margin-left: auto; margin-right: auto; padding-left: 13px; position: absolute; height: 2px; top: 16px; border: 0; width: 270px; background-color: #585858; z-index: 99;}
+	
+	#ConstruccionWeb .Departamentos form {position:absolute; top: 150px;left: 18px; z-index: 3;}
+	#ConstruccionWeb .txtDepartamentos {position:absolute; top: 10px; left: 0px; z-index: 3;}
+	#ConstruccionWeb .txtDepartamentos p{ font-family: Fortheenas_01; font-style: normal; font-weight: normal; text-align: center; font-size: 27px; color: #ffffff;}
+	#ConstruccionWeb .numDepartamentos {position:absolute; top: -10px; left: 220px; z-index: 3;}
+	#ConstruccionWeb .numDepartamentos p{ font-family: Fortheenas_01; font-style: normal; font-weight: lighter; text-align: center; font-size: 47px; color: red;}
+	#ConstruccionWeb .LineaDepartamentos {position: absolute; float: left; top: 50px; left: 4px;}
+	#ConstruccionWeb .LineaDepartamentos hr {margin-left: auto; margin-right: auto; padding-left: 13px; position: absolute; height: 2px; top: 16px; border: 0; width: 270px; background-color: #585858; z-index: 99;}
+	
+	#ConstruccionWeb .Terrenos form {position:absolute; top: 250px;left: 18px; z-index: 3;}
+	#ConstruccionWeb .txtTerrenos {position:absolute; top: 20px; z-index: 3;}
+	#ConstruccionWeb .txtTerrenos p{ font-family: Fortheenas_01; font-style: normal; font-weight: normal; text-align: center; font-size: 27px; color: #ffffff;}
+	#ConstruccionWeb .numTerrenos {position:absolute; top: 0px; left: 220px; z-index: 3;}
+	#ConstruccionWeb .numTerrenos p{ font-family: Fortheenas_01; font-style: normal; font-weight: lighter; text-align: center; font-size: 47px; color: red;}
+	
+	#ConstruccionWeb .ImagenConstruccionWebHeader1 { position: absolute; float: left; top: 0px; left: 327px; margin: 0px;}
+	#ConstruccionWeb .ImagenConstruccionWebHeader1 img{ position: absolute; float: left; width: 545px; height: 349px; }
+		
+	#PropiedadesDestacadas {position: absolute; float: left; left: 400px; top: 750px; height: 200px;}
+	#PropiedadesDestacadas .PropiedadesDestacadasHeader { position: absolute;  float: left; }
+	#PropiedadesDestacadas .PropiedadesDestacadasHeader p{ font-family: Fortheenas_01; font-style: normal; font-weight: lighter; text-align: center;  line-height: 40px; font-size: 40px; color: #000000;}
+	#PropiedadesDestacadas .PropiedadesDestacadasHeader2 { position: absolute;  float: left; padding-left: 260px;}
+	#PropiedadesDestacadas .PropiedadesDestacadasHeader2 p{ font-family: 'Nexa_Bold'; font-style: normal; font-weight: lighter; text-align: center; line-height: 40px; font-size: 40px; color: #000000;}
+	
+	#PropiedadesDestacadas .Imagenslider { position: absolute; float: left; top: 100px; left: -200px;margin: 0px;}
+	#PropiedadesDestacadas .Imagenslider img{ position: absolute; float: left; width: 1000px; height: 209px; }
+	
+	#Propiedades {position: absolute; float: left; left: 400px; top: 1050px; height: 200px;}
+	#Propiedades .Propiedad1 form {position:absolute; left: 18px; z-index: 3;}
+	#Propiedades .Propiedad1Header {position:absolute; top: 20px; z-index: 3;}
+	#Propiedades .Propiedad1Header p{ font-family: Fortheenas_01; font-style: normal; font-weight: normal; text-align: center; font-size: 27px; color: #ffffff;}
+	#Propiedades .Propiedad1Descripcion {position:absolute; top: 0px; left: 220px; z-index: 3;}
+	#Propiedades .Propiedad1Descripcion p{ font-family: Fortheenas_01; font-style: normal; font-weight: lighter; text-align: center; font-size: 12px; color: red;}
+
+	
+	#final {
+		margin: auto;
+		height: 200px;
+		width: 1400px;
+		position: absolute;
+		background: #000000;
+		background-color: #000000; 
+		top: 1565px;
+		z-index: 9999;
+	}
+	#final .ComunicateNosotrosHeader {position:absolute; left: 230px; z-index: 3; padding-top: 23px; }
+	#final .ComunicateNosotrosHeader p{ text-transform: uppercase; font-family: 'Nexa_Light'; top:10px; font-style: normal; font-weight: bolder; text-align: left; font-size: 25px; color: #ffffff;}
+	#final .ComunicateNosotrosHeader2 {position:absolute; left: 230px; z-index: 3; padding-top: 50px; }
+	#final .ComunicateNosotrosHeader2 p{ text-transform: uppercase; font-family: 'Nexa_Light'; top:10px; font-style: normal; font-weight: bolder; text-align: left; font-size: 25px; color: #ffffff;}
+	#final .lineaComunicateNostros { position: absolute; top:64px; padding-top: 120px; vertical-align: middle; padding-left: 405px; }
+	#final .lineaComunicateNostros hr { margin-left: auto; margin-right: auto; padding-left: 13px; position: absolute; height: 1px; top: 16px; border: 0; width: 40px; background-color: red; z-index: 99;	}
+	#final .logo-blanco-negro img{ padding-left: 230px; top: 110px; width: 180px; height: 70px; float: left; position: absolute; z-index: 99;}
+	
+	#final .LlamanosFooter {position:absolute; left: 650px; z-index: 3; padding-top: 30px; }
+	#final .LlamanosFooter p{ text-transform: uppercase; font-family: 'Nexa_Bold'; top:10px; font-style: normal; font-weight: 800; text-align: right; font-size: 10px; color: #ffffff;}
+	#final .telefono {position:absolute; left: 620px; z-index: 3; padding-top: 50px; }
+	#final .telefono p{ text-transform: uppercase; font-family: 'Nexa_Bold'; top:10px; font-style: normal; font-weight: 800; text-align: right; font-size: 12px; color: #ffffff;}
+	#final .comparte {position:absolute; left: 640px; z-index: 3; padding-top: 130px; }
+	#final .comparte p{ text-transform: uppercase; font-family: 'Nexa_Bold'; padding-right: 25px; top:10px; font-style: normal; font-weight: 800; text-align: right; font-size: 9px; color: #ffffff;}
+	#final .lineaLlamanosFooter { position: absolute; vertical-align: middle; padding-left: 600px; top: 20px; }
+	#final .lineaLlamanosFooter hr { margin-left: auto; margin-right: auto; position: absolute; height: 1px; top: 16px; border: 0; width: 36px; background-color: #ffffff; z-index: 99;	}
+	#final .lineaLlamanosFooterComparte { position: absolute; vertical-align: middle; padding-left: 600px; top: 164px; }
+	#final .lineaLlamanosFooterComparte hr { margin-left: auto; margin-right: auto; position: absolute; height: 1px; top: 16px; border: 0; width: 36px; background-color: #ffffff; z-index: 99;	}
+	#final .icono-facebook img{ padding-left: 700px; top: 165px; width: 15px; height: 18px; float: left; position: absolute; z-index: 99;}
+	
+	#final .EmailFooter {position:absolute; left: 870px; z-index: 3; padding-top: 30px; }
+	#final .EmailFooter p{ font-family: 'Nexa_Bold'; top:10px; font-style: normal; font-weight: 800; text-align: right; font-size: 10px; color: #ffffff;}
+	#final .correo {position:absolute; left: 780px; z-index: 3; padding-top: 50px; }
+	#final .correo p{ font-family: 'Nexa_Bold'; top:10px; font-style: normal; font-weight: 800; text-align: right; font-size: 12px; color: #ffffff;}
+	#final .youtube {position:absolute; left: 850px; z-index: 3; padding-top: 130px; }
+	#final .youtube p{ text-transform: uppercase; font-family: 'Nexa_Bold'; padding-right: 35px; top:10px; font-style: normal; font-weight: 800; text-align: right; font-size: 9px; color: #ffffff;}
+	#final .EmailContactoBoton { position: absolute; top: 116px; float: left; vertical-align: middle; padding-left: 798px; z-index: 99; }
+	#final .EmailContactoBoton button{
+		position: absolute;
+		float: left;
+		box-sizing: content-box;
+		color: #ffffff;
+		background-color: #000000;
+		border: 1px solid #ffffff;
+		border-left-color: #ffffff;
+		float: left;
+		font-family: 'Cabin', helvetica, arial, sans-serif;
+		font-size: 9px;
+		font-weight: 400;
+		/*---altura de letra del boton-----*/
+		height: 25px;
+		text-transform: uppercase;
+		line-height: 20px;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		/*largo del boton*/
+		width: 110px;
+	}
+	
+	#final .lineaContactoEmailFooter { position: absolute; top: 20px; vertical-align: middle; padding-left: 810px; }
+	#final .lineaContactoEmailFooter hr { margin-left: auto; margin-right: auto; position: absolute; height: 1px; top: 16px; border: 0; width: 36px; background-color: #ffffff; z-index: 99;	}	
+	#final .lineaEmailFooter { position: absolute; top: 164px; vertical-align: middle; padding-left: 810px; }
+	#final .lineaEmailFooter hr { margin-left: auto; margin-right: auto; position: absolute; height: 1px; top: 16px; border: 0; width: 36px; background-color: #ffffff; z-index: 99;	}
+	#final .lineaYoutubeFooter { position: absolute; top: 130px; vertical-align: middle; padding-left: 830px; }
+	#final .lineaYoutubeFooter hr { position: absolute; margin-left: auto; margin-right: auto;  height: 1px; top: 16px; border: 0; width: 50px; background-color: #ffffff; z-index: 99;	}
+	#final .icono-youtube img{ position: absolute; padding-left: 900px; top: 165px; width: 20px; height: 25px; float: left;  z-index: 99;}
+	
+	#final .VisitanosFooter { position:absolute; left: 1100px; z-index: 3; padding-top: 30px; }
+	#final .VisitanosFooter p{ text-transform: uppercase; font-family: 'Nexa_Bold'; font-style: normal; font-weight: 800; text-align: right; font-size: 10px; color: #ffffff;}
+	#final .direccion { position:absolute; left: 1058px; z-index: 3; padding-top: 50px; }
+	#final .direccion p{ text-transform: uppercase; font-family: 'Nexa_Bold'; font-style: normal; font-weight: 800; text-align: right; font-size: 10px; color: #ffffff;}
+	#final .instagram { position:absolute; left: 1090px; z-index: 3; padding-top: 130px; }
+	#final .instagram p{ text-transform: uppercase; font-family: 'Nexa_Bold'; padding-right: 15px; font-style: normal; font-weight: 800; text-align: right; font-size: 9px; color: #ffffff;}
+	#final .lineaVisitanosFooter { position: absolute; padding-left: 1038px; top: 20px;  vertical-align: middle;  }
+	#final .lineaVisitanosFooter hr { margin-left: auto; margin-right: auto; position: absolute; height: 1px; top: 16px; border: 0; width: 36px; background-color: #ffffff; z-index: 99;	}
+	#final .lineaVisitanosFooterInstagram { position: absolute; padding-left: 1040px; top: 165px; vertical-align: middle;  }
+	#final .lineaVisitanosFooterInstagram hr { margin-left: auto; margin-right: auto; position: absolute; height: 1px; top: 16px; border: 0; width: 36px; background-color: #ffffff; z-index: 99;	}
+	#final .VisitanosFooterInstagramlogo img{ padding-left: 1150px; top: 165px; width: 15px; height: 25px; float: left; position: absolute; z-index: 99;}
+	
+	#final .DesingbyMonkey { position:absolute; top: 184px; left: 100px; z-index: 3; }
+	#final .DesingbyMonkey p{ text-transform: uppercase; font-family: 'Nexa_Bold'; font-style: normal; font-weight: 800; text-align: right; font-size: 10px; color: #ffffff;}
+
+	
+	
+	

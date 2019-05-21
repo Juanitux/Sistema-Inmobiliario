@@ -5,11 +5,28 @@
 }
 
 #menuPrincipal{
-    margin-top: 20px;
     position: relative;
-    top: 5px;
+    
 }
 
+#formComprarAlquilar{
+    font-family: Arial, "Arial CE", "Lucida Grande CE", lucida, "Helvetica CE", sans-serif;
+    border-bottom: 1px solid #AFAFAF; 
+    font-size:  24px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 50px;
+    color: black;
+    text-align: center;
+}
+
+#formMostraClientes{
+    text-align: center;
+}
+
+#globalFilter{
+    font-size:  30px;
+}
 
 #sessionUsuario{
     color: #000000;
@@ -30,7 +47,7 @@
 
 #top {
     position: relative;
-    background-color: #036fab;
+    background-color: #f2f2f2;
     color: white;
     padding: 5px;
     margin: 0px 0px 10px 0px;
@@ -43,7 +60,7 @@
     font-weight: bold;
     height: 25px;
     position: relative;
-    background-color: lightgreen;
+    background-color: black;
     padding: 5px;
     margin: 10px 0px 0px 0px;
     text-align: center;
@@ -82,13 +99,13 @@
 }
 
 #top a:link, #top a:visited {
-  color: greenyellow;
+  color: black;
   font-weight : bold;
   text-decoration: none;
 }
 
 #top a:link:hover, #top a:visited:hover  {
-  color: yellow;
+  color: black;
   font-weight : bold;
   text-decoration : underline;
 }

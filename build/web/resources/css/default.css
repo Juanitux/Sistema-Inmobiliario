@@ -12,9 +12,10 @@ h1 {
      
     font-size:  30px;
     font-weight: bold;
-    margin: 0px;
-    padding: 0px;
-    color: #D20005;
+    margin: 100 px;
+    padding: 10px;
+    color: black;
+    text-align: center;
 }
 
 h2 {
@@ -34,7 +35,7 @@ a:link, a:visited {
 }
 
 a:link:hover, a:visited:hover  {
-  color: #D20005;
+  color: black;
   font-weight : bold;
   text-decoration : underline;
 }

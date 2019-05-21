@@ -1,0 +1,307 @@
+*{ margin: 0px; padding: 0px; }
+@font-face {
+    font-family: 'Nexa_Light';
+	src: url('../fuentes/Nexa_Light.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fortheenas_01';
+	src: url('../fuentes/Fortheenas_01.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Fortheenas_01_Bold';
+	src: url('../fuentes/Fortheenas_01_Bold.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Fortheenas_01_Bold_Italic';
+	src: url('../fuentes/Fortheenas_01_Bold_Italic.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Fortheenas_01_Italic';
+	src: url('../fuentes/Fortheenas_01_Italic.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Nexa_Bold';
+	src: url('../fuentes/Nexa_Bold.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+	
+body { 
+		font: 15px/1.5 Arial, Helvetica, sans-serif;
+		padding: 0;
+		margin: 0;
+		background-color: #ffffff;
+	}
+
+	.container{
+		width: 100%;
+		margin: auto;
+	}
+	
+	#header { border: 0px; height: 100px; width: 100%; z-index: 10; background: #F2F2F2; position: fixed; z-index: 9999;}
+	#header a{ color:#000000; font-family: 'Nexa_Bold'; text-decoration: none; text-transform: uppercase; font-size: 11px; font-weight:bold; }
+	#header ul{ margin: 10px; padding: 25px; padding-right: 70px;}
+	#header nav{ float: right; }
+	#header li{ float:left; display: inline; padding: 32px 72px 0px 35px; }
+	#header .logo img{ float: left; position: absolute; padding-left: 110px; width: 240px; height: 100px; }
+	li>a:hover,
+	li>a:focus {background: #ffffff; color:#333;}
+
+	#Servicios { position: absolute; float: left; top: 200px; height: 200px; }
+	#Servicios .NuestrosServiciosHeader { position: absolute; padding-left: 300px; float: left;}
+	#Servicios .NuestrosServiciosHeader p{ font-family: Fortheenas_01; font-style: normal; font-weight: lighter; text-align: center; text-transform: uppercase; line-height: 40px; font-size: 40px; color: #000000;}
+	#Servicios .NuestrosServiciosHeader2 { position: absolute; padding-left: 300px; float: left; top: 38px;}
+	#Servicios .NuestrosServiciosHeader2 p{ text-transform: uppercase; font-family: 'Nexa_Bold'; font-style: normal; font-weight: lighter; text-align: center; line-height: 40px; font-size: 40px; color: #000000;}
+	#Servicios .LineaServicios {position: absolute; float: left; top: 40px; left: 530px;}
+	#Servicios .LineaServicios hr {margin-left: auto; margin-right: auto; padding-left: 13px; position: absolute; height: 1px; top: 16px; border: 0; width: 600px; background-color: #585858; z-index: 99;}
+	#Servicios .ImagenServicios { position: absolute; float: left; top: 200px; left: 0px; margin: 0px;}
+	#Servicios .ImagenServicios img{ position: absolute; float: left; height: 768px; width: 768px;}
+	#Servicios .ImagenBE { position: absolute; float: left; top: 188px; left: 240px; margin: 0px;}
+	#Servicios .ImagenBE img{ position: absolute; float: left; height: 300px; width: 100px;}
+	/*Empieza Cuadro Construccion*/
+	#Servicios .Construccion { position: absolute; float: left; top: 300px; left: 440px; margin: 0px;}
+	#Servicios .ConstruccionHeader { position: absolute; float: left; margin: 0px;}
+	#Servicios .ConstruccionHeader p{ text-transform: uppercase; font-family: 'Nexa_Bold'; font-style: normal; text-align: center; line-height: 40px; font-size: 35px; color: #ffffff;}
+	#Servicios .ConstruccionHeader2 { position: absolute; float: left; top:-2px; left: 172px; margin: 0px;}
+	#Servicios .ConstruccionHeader2 p{ font-family: Fortheenas_01; font-style: normal; font-weight: lighter; text-align: center; text-transform: uppercase; line-height: 40px; font-size: 35px; color: #ffffff;}
+	#Servicios .LineaConstruccion { position: absolute; float: left; top: 24px; left: 210px; margin: 0px;}
+	#Servicios .LineaConstruccion hr {margin-left: auto; margin-right: auto; padding-left: 13px; position: absolute; height: 1px; top: 16px; border: 0; width: 160px; background-color: red; z-index: 99;}
+	#Servicios .txtConstruccion {position: absolute; float: left; left:350px; top:-24px; margin: 0px; width: 290px;}
+	#Servicios .txtConstruccion p {font-family: 'Nexa_Light'; line-height: 14px; font-weight: lighter; text-align: justify; font-size: 14px; color: #000000;}
+	#Servicios .botonConoceMas {position: absolute; float: left; left:580px; top:34px; margin: 0px;}
+	#Servicios .botonConoceMas button{
+		position: absolute;
+		float: left;
+		box-sizing: content-box;
+		background-color: #ffffff;
+		border: 1px solid #FF0000;
+		border-left-color: #FF0000;
+		float: left;
+		font-family: 'Nexa_Bold';
+		font-size: 11px;
+		font-weight: 400;
+		/*---altura de letra del boton-----*/
+		height: 26px;
+		text-transform: uppercase;
+		line-height: 30px;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		/*largo del boton*/
+		width: 120px;
+	}
+	#Servicios .lineaboton {position: absolute; float: left; left:610px; top:50px; margin: 0px;}
+	#Servicios .lineaboton hr {margin-left: auto; margin-right: auto; position: absolute; height: 1px; top: 16px; border: 0; width: 60px; background-color: red; z-index: 99;}
+	/*Empieza Cuadro Mantenimiento*/
+	#Servicios .Mantenimiento { position: absolute; float: left; top: 440px; left: 440px; margin: 0px;}
+	#Servicios .MantenimientoHeader { position: absolute; float: left; margin: 0px;}
+	#Servicios .MantenimientoHeader p{ text-transform: uppercase; font-family: 'Nexa_Bold'; font-style: normal; text-align: center; line-height: 40px; font-size: 35px; color: #ffffff;}
+	#Servicios .MantenimientoHeader2 { position: absolute; float: left; top:-1px; left: 160px; margin: 0px;}
+	#Servicios .MantenimientoHeader2 p{ font-family: Fortheenas_01; font-style: normal; font-weight: lighter; text-align: center; text-transform: uppercase; line-height: 40px; font-size: 35px; color: #ffffff;}
+	#Servicios .LineaMantenimiento { position: absolute; float: left; top: 24px; left: 210px; margin: 0px;}
+	#Servicios .LineaMantenimiento hr {margin-left: auto; margin-right: auto; padding-left: 13px; position: absolute; height: 1px; top: 16px; border: 0; width: 160px; background-color: red; z-index: 99;}
+	#Servicios .txtMantenimiento {position: absolute; float: left; left:350px; top:-50px; margin: 0px; width: 300px;}
+	#Servicios .txtMantenimiento p {font-family: 'Nexa_Light'; line-height: 14px; font-weight: lighter; text-align: justify; font-size: 14px; color: #000000;}
+	#Servicios .botonConoceMantenimientoMas {position: absolute; float: left; left:580px; top:34px; margin: 0px;}
+	#Servicios .botonConoceMantenimientoMas button{
+		position: absolute;
+		float: left;
+		box-sizing: content-box;
+		background-color: #ffffff;
+		border: 1px solid #FF0000;
+		border-left-color: #FF0000;
+		float: left;
+		font-family: 'Nexa_Bold';
+		font-size: 11px;
+		font-weight: 400;
+		/*---altura de letra del boton-----*/
+		height: 26px;
+		text-transform: uppercase;
+		line-height: 30px;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		/*largo del boton*/
+		width: 120px;
+	}
+	
+	#Servicios .lineabotonMantenimiento {position: absolute; float: left; left:610px; top:50px; margin: 0px;}
+	#Servicios .lineabotonMantenimiento hr {margin-left: auto; margin-right: auto; position: absolute; height: 1px; top: 16px; border: 0; width: 60px; background-color: red; z-index: 99;}
+
+	#Servicios .Inversiones { position: absolute; float: left; top: 580px; left: 440px; margin: 0px;}
+	#Servicios .InversionesHeader { position: absolute; float: left; margin: 0px;}
+	#Servicios .InversionesHeader p{ text-transform: uppercase; font-family: 'Nexa_Bold'; font-style: normal; text-align: center; line-height: 40px; font-size: 35px; color: #ffffff;}
+	#Servicios .InversionesHeader2 { position: absolute; float: left; top:-1px; left: 108px; margin: 0px;}
+	#Servicios .InversionesHeader2 p{ font-family: Fortheenas_01; font-style: normal; font-weight: lighter; text-align: center; text-transform: uppercase; line-height: 40px; font-size: 35px; color: #ffffff;}
+	#Servicios .LineaInversiones { position: absolute; float: left; top: 24px; left: 210px; margin: 0px;}
+	#Servicios .LineaInversiones hr {margin-left: auto; margin-right: auto; padding-left: 13px; position: absolute; height: 1px; top: 16px; border: 0; width: 160px; background-color: red; z-index: 99;}
+	#Servicios .txtInversiones {position: absolute; float: left; left:350px; top:0px; margin: 0px; width: 290px;}
+	#Servicios .txtInversiones p {font-family: 'Nexa_Light'; line-height: 14px; font-weight: lighter; text-align: justify; font-size: 14px; color: #000000;}
+	#Servicios .botonConoceInversionesMas {position: absolute; float: left; left:580px; top:34px; margin: 0px;}
+	#Servicios .botonConoceInversionesMas button{
+		position: absolute;
+		float: left;
+		box-sizing: content-box;
+		background-color: #ffffff;
+		border: 1px solid #FF0000;
+		border-left-color: #FF0000;
+		float: left;
+		font-family: 'Nexa_Bold';
+		font-size: 11px;
+		font-weight: 400;
+		/*---altura de letra del boton-----*/
+		height: 26px;
+		text-transform: uppercase;
+		line-height: 30px;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		/*largo del boton*/
+		width: 120px;
+	}
+	
+	#Servicios .lineabotonInversiones {position: absolute; float: left; left:610px; top:50px; margin: 0px;}
+	#Servicios .lineabotonInversiones hr {margin-left: auto; margin-right: auto; position: absolute; height: 1px; top: 16px; border: 0; width: 60px; background-color: red; z-index: 99;}
+
+	#ConstruccionWeb {position: absolute; float: left; left: 200px; top: 200px; height: 200px;}
+	#ConstruccionWeb .ConstruccionWebHeader { position: absolute;  float: left;}
+	#ConstruccionWeb .ConstruccionWebHeader p{ font-family: 'Nexa_Bold'; font-style: normal; font-weight: lighter; text-align: center; text-transform: uppercase; line-height: 40px; font-size: 40px; color: #000000;}
+	#ConstruccionWeb .ConstruccionWebHeader2 { position: absolute; padding-left: 182px; float: left;}
+	#ConstruccionWeb .ConstruccionWebHeader2 p{ font-family: Fortheenas_01; text-transform: uppercase; font-style: normal; font-weight: lighter; text-align: center; line-height: 40px; font-size: 40px; color: #000000;}
+	#ConstruccionWeb .LineaConstruccionWebHeader {position: absolute; float: left; top: 18px; left: 354px;}
+	#ConstruccionWeb .LineaConstruccionWebHeader hr {margin-left: auto; margin-right: auto; padding-left: 13px; position: absolute; height: 1px; top: 16px; border: 0; width: 490px; background-color: #585858; z-index: 99;}
+
+	#ConstruccionWeb .ProyectosInmobiliarios {position:absolute; top: 200px; width: 217px; height:100px; color: #000000; background-color: #000000; border-color: #000000;   z-index: 2;}
+	#ConstruccionWeb .ProyectosInmobiliarios form {position:absolute; float: right; color: #ffffff;  background-color: #000000; width: 217px; height:100px; z-index: 2;}
+	#ConstruccionWeb .txtProyectoInmobiliario {position:absolute; top: 64px; left: 8px; z-index: 3;}
+	#ConstruccionWeb .txtProyectoInmobiliario p{ text-transform: uppercase; font-family: 'Nexa_Bold'; font-style: normal; font-weight: lighter; text-align: center; font-size: 27px; color: #ffffff;}
+	#ConstruccionWeb .txtProyectoInmobiliario2 {position:absolute; top: 64px; left: 118px; z-index: 3;}
+	#ConstruccionWeb .txtProyectoInmobiliario2 p{ text-transform: uppercase; font-family: Fortheenas_01; font-style: normal; font-weight: lighter; text-align: center; font-size: 27px; color: #ffffff;}
+
+	#ConstruccionWeb .ResidenciasDomoticas {position:absolute; top: 645px; left: 545px; width: 217px; height:100px; color: #000000; background-color: #000000; border-color: #000000;   z-index: 2;}
+	#ConstruccionWeb .ResidenciasDomoticas form {position:absolute; float: right; color: #ffffff;  background-color: #000000; width: 217px; height:100px; z-index: 2;}
+	#ConstruccionWeb .txtResidenciasDomoticas {position:absolute; top: 64px; left: 12px; z-index: 3;}
+	#ConstruccionWeb .txtResidenciasDomoticas p{ text-transform: uppercase; font-family: 'Nexa_Bold'; font-style: normal; font-weight: lighter; text-align: center; font-size: 27px; color: #ffffff;}
+	#ConstruccionWeb .txtResidenciasDomoticas2 {position:absolute; top: 64px; left: 68px; z-index: 3;}
+	#ConstruccionWeb .txtResidenciasDomoticas2 p{ text-transform: uppercase; font-family: Fortheenas_01; font-style: normal; font-weight: lighter; text-align: center; font-size: 27px; color: #ffffff;}
+
+	#ConstruccionWeb .Restauraciones {position:absolute; top: 745px; left: 216px; width: 217px; height:100px; color: #000000; background-color: #000000; border-color: #000000;   z-index: 2;}
+	#ConstruccionWeb .Restauraciones form {position:absolute; float: right; color: #ffffff;  background-color: #000000; width: 217px; height:100px; z-index: 2;}
+	#ConstruccionWeb .txtRestauraciones {position:absolute; top: 64px; left: 12px; z-index: 3;}
+	#ConstruccionWeb .txtRestauraciones p{ text-transform: uppercase; font-family: 'Nexa_Bold'; font-style: normal; font-weight: lighter; text-align: center; font-size: 27px; color: #ffffff;}
+	#ConstruccionWeb .txtRestauraciones2 {position:absolute; top: 64px; left: 58px; z-index: 3;}
+	#ConstruccionWeb .txtRestauraciones2 p{ text-transform: uppercase; font-family: Fortheenas_01; font-style: normal; font-weight: lighter; text-align: center; font-size: 27px; color: #ffffff;}
+
+	#ConstruccionWeb .Remodelaciones {position:absolute; top: 1192px; left: 433px; width: 217px; height:100px; color: #000000; background-color: #000000; border-color: #000000;   z-index: 2;}
+	#ConstruccionWeb .Remodelaciones form {position:absolute; float: right; color: #ffffff;  background-color: #000000; width: 217px; height:100px; z-index: 2;}
+	#ConstruccionWeb .txtRemodelaciones {position:absolute; top: 64px; left: 12px; z-index: 3;}
+	#ConstruccionWeb .txtRemodelaciones p{ text-transform: uppercase; font-family: 'Nexa_Bold'; font-style: normal; font-weight: lighter; text-align: center; font-size: 23px; color: #ffffff;}
+	#ConstruccionWeb .txtRemodelaciones2 {position:absolute; top: 64px; left: 114px; z-index: 3;}
+	#ConstruccionWeb .txtRemodelaciones2 p{ text-transform: uppercase; font-family: Fortheenas_01; font-style: normal; font-weight: lighter; text-align: center; font-size: 23px; color: #ffffff;}
+
+		#ConstruccionWeb .ImagenConstruccionWebHeader1 { position: absolute; float: left; top: 200px; left: 0px; margin: 0px;}
+	#ConstruccionWeb .ImagenConstruccionWebHeader1 img{ position: absolute; float: left; width: 545px; height: 545px; }
+		#ConstruccionWeb .ImagenConstruccionWebHeader2 { position: absolute; float: left; top: 200px; left: 545px; margin: 0px;}
+	#ConstruccionWeb .ImagenConstruccionWebHeader2 img{ position: absolute; float: left;  width: 320px; height: 545px;}
+		#ConstruccionWeb .ImagenConstruccionWebHeader3 { position: absolute; float: left; top: 745px; left: 0px; margin: 0px;}
+	#ConstruccionWeb .ImagenConstruccionWebHeader3 img{ position: absolute; float: left;  width: 433px; height: 548px;}
+		#ConstruccionWeb .ImagenConstruccionWebHeader4 { position: absolute; float: left; top: 745px; left: 433px; margin: 0px;}
+	#ConstruccionWeb .ImagenConstruccionWebHeader4 img{ position: absolute; float: left;  width: 433px; height: 548px;}
+	
+	#final {
+		margin: auto;
+		height: 200px;
+		width: 1400px;
+		position: absolute;
+		background: #000000;
+		background-color: #000000; 
+		top: 1565px;
+		z-index: 9999;
+	}
+	#final .ComunicateNosotrosHeader {position:absolute; left: 230px; z-index: 3; padding-top: 23px; }
+	#final .ComunicateNosotrosHeader p{ text-transform: uppercase; font-family: 'Nexa_Light'; top:10px; font-style: normal; font-weight: bolder; text-align: left; font-size: 25px; color: #ffffff;}
+	#final .ComunicateNosotrosHeader2 {position:absolute; left: 230px; z-index: 3; padding-top: 50px; }
+	#final .ComunicateNosotrosHeader2 p{ text-transform: uppercase; font-family: 'Nexa_Light'; top:10px; font-style: normal; font-weight: bolder; text-align: left; font-size: 25px; color: #ffffff;}
+	#final .lineaComunicateNostros { position: absolute; top:64px; padding-top: 120px; vertical-align: middle; padding-left: 405px; }
+	#final .lineaComunicateNostros hr { margin-left: auto; margin-right: auto; padding-left: 13px; position: absolute; height: 1px; top: 16px; border: 0; width: 40px; background-color: red; z-index: 99;	}
+	#final .logo-blanco-negro img{ padding-left: 230px; top: 110px; width: 180px; height: 70px; float: left; position: absolute; z-index: 99;}
+	
+	#final .LlamanosFooter {position:absolute; left: 650px; z-index: 3; padding-top: 30px; }
+	#final .LlamanosFooter p{ text-transform: uppercase; font-family: 'Nexa_Bold'; top:10px; font-style: normal; font-weight: 800; text-align: right; font-size: 10px; color: #ffffff;}
+	#final .telefono {position:absolute; left: 620px; z-index: 3; padding-top: 50px; }
+	#final .telefono p{ text-transform: uppercase; font-family: 'Nexa_Bold'; top:10px; font-style: normal; font-weight: 800; text-align: right; font-size: 12px; color: #ffffff;}
+	#final .comparte {position:absolute; left: 640px; z-index: 3; padding-top: 130px; }
+	#final .comparte p{ text-transform: uppercase; font-family: 'Nexa_Bold'; padding-right: 25px; top:10px; font-style: normal; font-weight: 800; text-align: right; font-size: 9px; color: #ffffff;}
+	#final .lineaLlamanosFooter { position: absolute; vertical-align: middle; padding-left: 600px; top: 20px; }
+	#final .lineaLlamanosFooter hr { margin-left: auto; margin-right: auto; position: absolute; height: 1px; top: 16px; border: 0; width: 36px; background-color: #ffffff; z-index: 99;	}
+	#final .lineaLlamanosFooterComparte { position: absolute; vertical-align: middle; padding-left: 600px; top: 164px; }
+	#final .lineaLlamanosFooterComparte hr { margin-left: auto; margin-right: auto; position: absolute; height: 1px; top: 16px; border: 0; width: 36px; background-color: #ffffff; z-index: 99;	}
+	#final .icono-facebook img{ padding-left: 700px; top: 165px; width: 15px; height: 18px; float: left; position: absolute; z-index: 99;}
+	
+	#final .EmailFooter {position:absolute; left: 870px; z-index: 3; padding-top: 30px; }
+	#final .EmailFooter p{ font-family: 'Nexa_Bold'; top:10px; font-style: normal; font-weight: 800; text-align: right; font-size: 10px; color: #ffffff;}
+	#final .correo {position:absolute; left: 780px; z-index: 3; padding-top: 50px; }
+	#final .correo p{ font-family: 'Nexa_Bold'; top:10px; font-style: normal; font-weight: 800; text-align: right; font-size: 12px; color: #ffffff;}
+	#final .youtube {position:absolute; left: 850px; z-index: 3; padding-top: 130px; }
+	#final .youtube p{ text-transform: uppercase; font-family: 'Nexa_Bold'; padding-right: 35px; top:10px; font-style: normal; font-weight: 800; text-align: right; font-size: 9px; color: #ffffff;}
+	#final .EmailContactoBoton { position: absolute; top: 116px; float: left; vertical-align: middle; padding-left: 798px; z-index: 99; }
+	#final .EmailContactoBoton button{
+		position: absolute;
+		float: left;
+		box-sizing: content-box;
+		color: #ffffff;
+		background-color: #000000;
+		border: 1px solid #ffffff;
+		border-left-color: #ffffff;
+		float: left;
+		font-family: 'Cabin', helvetica, arial, sans-serif;
+		font-size: 9px;
+		font-weight: 400;
+		/*---altura de letra del boton-----*/
+		height: 25px;
+		text-transform: uppercase;
+		line-height: 20px;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		/*largo del boton*/
+		width: 110px;
+	}
+	
+	#final .lineaContactoEmailFooter { position: absolute; top: 20px; vertical-align: middle; padding-left: 810px; }
+	#final .lineaContactoEmailFooter hr { margin-left: auto; margin-right: auto; position: absolute; height: 1px; top: 16px; border: 0; width: 36px; background-color: #ffffff; z-index: 99;	}	
+	#final .lineaEmailFooter { position: absolute; top: 164px; vertical-align: middle; padding-left: 810px; }
+	#final .lineaEmailFooter hr { margin-left: auto; margin-right: auto; position: absolute; height: 1px; top: 16px; border: 0; width: 36px; background-color: #ffffff; z-index: 99;	}
+	#final .lineaYoutubeFooter { position: absolute; top: 130px; vertical-align: middle; padding-left: 830px; }
+	#final .lineaYoutubeFooter hr { position: absolute; margin-left: auto; margin-right: auto;  height: 1px; top: 16px; border: 0; width: 50px; background-color: #ffffff; z-index: 99;	}
+	#final .icono-youtube img{ position: absolute; padding-left: 900px; top: 165px; width: 20px; height: 25px; float: left;  z-index: 99;}
+	
+	#final .VisitanosFooter { position:absolute; left: 1100px; z-index: 3; padding-top: 30px; }
+	#final .VisitanosFooter p{ text-transform: uppercase; font-family: 'Nexa_Bold'; font-style: normal; font-weight: 800; text-align: right; font-size: 10px; color: #ffffff;}
+	#final .direccion { position:absolute; left: 1058px; z-index: 3; padding-top: 50px; }
+	#final .direccion p{ text-transform: uppercase; font-family: 'Nexa_Bold'; font-style: normal; font-weight: 800; text-align: right; font-size: 10px; color: #ffffff;}
+	#final .instagram { position:absolute; left: 1090px; z-index: 3; padding-top: 130px; }
+	#final .instagram p{ text-transform: uppercase; font-family: 'Nexa_Bold'; padding-right: 15px; font-style: normal; font-weight: 800; text-align: right; font-size: 9px; color: #ffffff;}
+	#final .lineaVisitanosFooter { position: absolute; padding-left: 1038px; top: 20px;  vertical-align: middle;  }
+	#final .lineaVisitanosFooter hr { margin-left: auto; margin-right: auto; position: absolute; height: 1px; top: 16px; border: 0; width: 36px; background-color: #ffffff; z-index: 99;	}
+	#final .lineaVisitanosFooterInstagram { position: absolute; padding-left: 1040px; top: 165px; vertical-align: middle;  }
+	#final .lineaVisitanosFooterInstagram hr { margin-left: auto; margin-right: auto; position: absolute; height: 1px; top: 16px; border: 0; width: 36px; background-color: #ffffff; z-index: 99;	}
+	#final .VisitanosFooterInstagramlogo img{ padding-left: 1150px; top: 165px; width: 15px; height: 25px; float: left; position: absolute; z-index: 99;}
+	
+	#final .DesingbyMonkey { position:absolute; top: 184px; left: 100px; z-index: 3; }
+	#final .DesingbyMonkey p{ text-transform: uppercase; font-family: 'Nexa_Bold'; font-style: normal; font-weight: 800; text-align: right; font-size: 10px; color: #ffffff;}
+
+	
+	
+	

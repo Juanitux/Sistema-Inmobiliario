@@ -33,7 +33,6 @@ public class clienteBean {
     public void setClientesFiltrados(List<Cliente> clientesFiltrados) {
         this.clientesFiltrados = clientesFiltrados;
     }
-
     
     public void setListaClientes(List<Cliente> listaClientes) {
         this.listaClientes = listaClientes;
@@ -51,7 +50,6 @@ public class clienteBean {
         if(listaClientes==null){
             clienteDao cDao = new clienteDaoImp();
             listaClientes=cDao.listarClientes();
-            
         }
         return listaClientes;      
     }

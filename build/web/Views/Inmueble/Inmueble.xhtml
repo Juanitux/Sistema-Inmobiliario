@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <body>
+
+        <ui:composition template="./../../plantilla/plantilla.xhtml">
+
+            <ui:define name="content">
+                
+                <h:form id="formComprarAlquilar">
+                    <h:panelGrid columns="2" cellpadding="5">
+                        <p:outputLabel for="orientation" value="Qué deseas Buscar?" />
+                        <p:selectOneButton id="orientation" value="#{megaMenuView.orientation}" onchange="$('#form').submit()">
+                            <f:selectItem itemLabel="Comprar" itemValue="horizontal" />
+                            <f:selectItem itemLabel="Alquilar" itemValue="vertical" />
+                        </p:selectOneButton>
+                    </h:panelGrid>
+                </h:form>
+                <h:form id="formMostraClientes">
+                    <p:dataTable id="tablaClientes" paginator="true" paginatorPosition="top"
+                                 var="ct" value="#{clienteBean.listaClientes}"
+                                 emptyMessage="No se encontro inmueble"
+                                 widgetVar="tablaclienteBuscar"
+                                 filteredValue="#{clienteBean.clientesFiltrados}">
+
+                        <f:facet name="header">
+                            <p:outputPanel>
+                                <h:outputText value=""/>
+                                <p:inputText id="globalFilter" onkeyup="PF('tablaclienteBuscar').filter()"
+                                             style="margin:10px 50px 30px 1px; width: 500px; height: 40px;" placeholder="Buscar por ciudad, sector, o palabra clave "/>
+                            </p:outputPanel>
+                        </f:facet>
+                        
+                        
+                        <p:column >
+                            <p:layoutUnit position="center">
+                              <h:graphicImage url="resources/images/casaecuador.png" style =" text-align : center;" width="500px" height="200px"  ></h:graphicImage>
+                              
+                            </p:layoutUnit>
+                            
+                        </p:column>
+
+                        <p:column headerText="Nombre del Inmueble" filterBy="#{ct.nombres}" sortBy="#{ct.nombres}">
+                            <h:outputText value="#{ct.nombres} "/>
+                        </p:column>
+
+                        <p:column headerText="direccion" filterBy="#{ct.direccion}">
+                            <h:outputText value="#{ct.direccion}"/>
+                        </p:column>
+                        
+                         <p:column >
+                            <p:commandButton value="Ir a la propiedad" oncomplete="PF('dialogModificarCliente').show();"
+                                             >
+                                <f:setPropertyActionListener target="#{clienteBean.cliente}" value="#{ct}"> 
+                                </f:setPropertyActionListener>                
+                            </p:commandButton>
+                        </p:column>
+
+                    </p:dataTable>
+                </h:form>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

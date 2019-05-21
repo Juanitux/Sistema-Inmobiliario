@@ -1,0 +1,227 @@
+*{ margin: 0px; padding: 0px; }
+@font-face {
+    font-family: 'Nexa_Light';
+	src: url('../fuentes/Nexa_Light.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fortheenas_01';
+	src: url('../fuentes/Fortheenas_01.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Fortheenas_01_Bold';
+	src: url('../fuentes/Fortheenas_01_Bold.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Fortheenas_01_Bold_Italic';
+	src: url('../fuentes/Fortheenas_01_Bold_Italic.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Fortheenas_01_Italic';
+	src: url('../fuentes/Fortheenas_01_Italic.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: 'Nexa_Bold';
+	src: url('../fuentes/Nexa_Bold.otf')format('opentype');
+    font-weight: normal;
+	font-style: normal;
+}
+	
+body { 	font: 15px/1.5 Arial, Helvetica, sans-serif; padding: 0; margin: 0; background-color: #ffffff; }
+
+.container{
+	width: 100%;
+	margin: auto;
+}
+	
+	#header { border: 0px; height: 100px; width: 100%; z-index: 10; background: #F2F2F2; position: fixed; z-index: 9999;}
+	#header a{ color:#000000; font-family: 'Nexa_Bold'; text-decoration: none; text-transform: uppercase; font-size: 11px; font-weight:bold; }
+	#header ul{ margin: 10px; padding: 25px; padding-right: 70px;}
+	#header nav{ float: right; }
+	#header li{ float:left; display: inline; padding: 32px 72px 0px 35px; }
+	li>a:hover,
+	li>a:focus {background: #ffffff; color:#333;}
+	#header .logo img{ float: left; position: absolute; padding-left: 110px; width: 240px; height: 100px; }
+	#Logo { margin: auto; height: 280px; position: absolute; top: 100px; }
+	#Logo .LogoStratto img{ float: left; position: absolute; padding-top: 60px; padding-left: 420px; width: 240px; height: 160px;	}
+	#Logo .LogoMorante img{ float: left; position: absolute; padding-top: 60px; padding-left: 420px; width: 300px; height: 160px;	}
+	#Logo .LogoGavia img{ float: left; position: absolute; padding-top: 60px; padding-left: 420px; width: 240px; height: 160px;	}
+	#Logo .LineaLogoStratto {position: absolute; top: 160px; vertical-align: middle; padding-left: 720px; z-index: 55;}
+	#Logo .LineaLogoStratto hr{ top: 200px; padding-left: 400px; position: absolute; height: 2px; top: 16px; border: 0; width: 40px; background-color: #585858; z-index: 99;}
+	#Logo .LineaLogoMorante {position: absolute; top: 160px; vertical-align: middle; padding-left: 720px; z-index: 55;}
+	#Logo .LineaLogoMorante hr{ top: 200px; padding-left: 400px; position: absolute; height: 1px; top: 16px; border: 0; width: 40px; background-color: #585858; z-index: 99;}
+	
+	
+	#Home { 
+		top: 380px;
+		overflow: hidden;
+		margin: auto;
+		height: 630px;
+		position: absolute;
+		padding-left: 50px;
+	}
+	
+	#Home .txtParrafoHome { position: absolute; top: 10px; vertical-align: middle; padding-left: 230px; z-index: 55; width: 220px; height: 400px; }
+	#Home .txtParrafoHome p{ line-height: 18px; font-family: 'Fortheenas_01_Bold'; font-size: 16px; text-align: right; font-weight: bolder;}
+	#Home .txtParrafoHomeGavia { position: absolute; top: px; vertical-align: middle; padding-left: 120px; z-index: 55; width: 330px; height: 400px; }
+	#Home .txtParrafoHomeGavia p{ line-height: 18px; font-family: 'Fortheenas_01_Bold'; font-size: 16px; text-align: right; font-weight: bolder;}
+	#Home .txtParrafoHomeGavia2 { position: absolute; top: 100px; vertical-align: middle; padding-left: 120px; z-index: 55; width: 330px; height: 400px; }
+	#Home .txtParrafoHomeGavia2 p{ line-height: 18px; font-family: 'Fortheenas_01'; font-size: 14px; line-height: 15px; text-align: right; font-weight: bolder;}
+
+	
+	#Home .BoxHome {  position:absolute; top: 40px; padding-left: 232px;  height:400px;  z-index: 1;}
+	#Home .BoxHome form { position: absolute; float: right; top: 165px; vertical-align: middle; z-index: 55; width: 217px; border: 1px solid #000000;  height:219px; }
+	#Home .txtParrafoBoxHomeGavia { position: absolute; top: 260px; vertical-align: middle; padding-left: 260px; z-index: 55; width: 170px; height: 400px; }
+	#Home .txtParrafoBoxHomeGavia p { font-family: 'Nexa_Light'; line-height: 18px; text-align: center;  font-size: 14px; } 
+	#Home .txtParrafoBoxHome { position: absolute; top: 250px; vertical-align: middle; padding-left: 260px; z-index: 55; width: 170px; height: 400px; }
+	#Home .txtParrafoBoxHome p { font-family: 'Nexa_Light'; line-height: 18px; text-align: center;  font-size: 14px; } 
+	#Home .imgPortadaFachada { float: right; padding-left: 500px; }
+	#Home .imgPortadaFachada img{ float: right; width: 800px; height: 425px; }
+	#Home .txtInferiorPortadaHome { position: absolute; top: 440px; vertical-align: middle; padding-left: 500px; z-index: 55; 	}
+	#Home .txtInferiorPortadaHome p{ font-family: 'Nexa_Light'; font-size: 11px; vertical-align: middle;  z-index: 55; }
+	#Home .txtInferiorPortadaHome li{ font-family: 'Nexa_Light'; font-size: 11px; vertical-align: middle;  z-index: 55; }
+	
+	#Imagenes{
+		margin: auto;
+		height: 800px;
+		position: absolute;
+		top: 900px;
+	}
+	
+	#Imagenes form { position:absolute; top: 40px; padding-left: 227px;  z-index: 1; }
+	#Imagenes .imgPortada1 img{ position: absolute; top: 100px; width: 210px; height: 270px; z-index: 5;}
+	#Imagenes .imgPortada2 img{ position: absolute; top: 380px; width: 210px; height: 320px; z-index: 5;}
+	#Imagenes .imgPortada3 img{ position: absolute; top: 710px; width: 430px; height: 250px; z-index: 5;}
+	#Imagenes .imgPortada4 img{ position: absolute; top: 100px; padding-left: 222px; width: 430px; height: 300px; z-index: 5;}
+	#Imagenes .imgPortada5 img{ position: absolute; top: 410px; padding-left: 222px; width: 430px; height: 290px; z-index: 5;}
+	#Imagenes .imgPortada6 img{ position: absolute; top: 710px; padding-left: 442px; width: 210px; height: 250px; z-index: 5;}
+	#Imagenes .lineaImagen {  position: absolute; left: 618px; top: 384px;  vertical-align: middle; z-index: 999; }
+	#Imagenes .lineaImagen hr { transform: rotate(270deg); margin-left: auto; margin-right: auto;  position: absolute; height: 1px; top: 16px; border: 0; width: 600px; background-color: #585858; z-index: 99; }
+	#Imagenes .Descripcion {position: absolute; top: 740px; vertical-align: middle; padding-left: 688px; z-index: 55; width: 240px; height: 400px; }
+	#Imagenes .Descripcion p { font-family: 'Fortheenas_01_Bold'; font-size: 16px; text-align: left; line-height: 18px; font-weight: bolder; z-index: 9999; }
+	#Imagenes .Descripcion li{ font-family: 'Nexa_Light'; font-size: 12px; vertical-align: middle;  z-index: 55; line-height: 14px;}
+	#Imagenes .Descripcion hr { left: 890px;  position: absolute; height: 1px; top: 52px; border: 0; width: 40px; background-color: red; z-index: 99; }
+	#Imagenes .BotonSolicitaAsesoramiento {position: absolute; top: 926px; vertical-align: middle; padding-left: 688px; z-index: 55;}
+	#Imagenes .BotonSolicitaAsesoramiento button {
+		position: absolute;
+		float: left;
+		box-sizing: content-box;
+		background-color: #ffffff;
+		border: 1px solid #FF0000;
+		border-left-color: #FF0000;
+		float: left;
+		font-size: 10px;
+		font-weight: 400;
+		/*---altura de letra del boton-----*/
+		height: 28px;
+		width: 50px;
+		text-transform: uppercase;
+		line-height: 15px;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		/*largo del boton*/
+		width: 150px; }
+		
+	#Imagenes .BotonSolicitaAsesoramiento hr { left: 740px; padding-left: 10px; position: absolute; height: 1px; top: 34px; border: 0; width: 40px; background-color: red; z-index: 99; }
+	
+	#Mapa-google { position: absolute; background: #ffffff; top: 1900px; width: 1400px; }
+	
+	#Mapa-google .mapa { width: 1400px; position: absolute; background: #ffffff; top: 70px; }
+	#Mapa-google .Titulomapa { position:absolute; top: 20px; padding-left: 230px; z-index: 2; }
+	#Mapa-google .Titulomapa hr { position: absolute; left: 505px;  height: 1px; top: 30px; border: 0; width: 80px; background-color: red; z-index: 99; }
+	#Mapa-google .Titulomapa p { font-family: 'Nexa_Bold'; font-style: normal; font-weight: lighter; font-size: 20px; color: #000000; text-align: left }
+	
+	#final {
+		margin: auto;
+		height: 200px;
+		width: 1400px;
+		position: absolute;
+		background: #000000;
+		background-color: #000000; 
+		top: 2320px;
+		z-index: 1;
+	}
+	
+	#final .ComunicateNosotrosHeader {position:absolute; left: 230px; z-index: 3; padding-top: 23px; }
+	#final .ComunicateNosotrosHeader p{ text-transform: uppercase; font-family: 'Nexa_Light'; top:10px; font-style: normal; font-weight: bolder; text-align: left; font-size: 25px; color: #ffffff;}
+	#final .ComunicateNosotrosHeader2 {position:absolute; left: 230px; z-index: 3; padding-top: 50px; }
+	#final .ComunicateNosotrosHeader2 p{ text-transform: uppercase; font-family: 'Nexa_Light'; top:10px; font-style: normal; font-weight: bolder; text-align: left; font-size: 25px; color: #ffffff;}
+	#final .lineaComunicateNostros { position: absolute; top:64px; padding-top: 120px; vertical-align: middle; padding-left: 405px; }
+	#final .lineaComunicateNostros hr { margin-left: auto; margin-right: auto; padding-left: 13px; position: absolute; height: 1px; top: 16px; border: 0; width: 40px; background-color: red; z-index: 99;	}
+	#final .logo-blanco-negro img{ padding-left: 230px; top: 110px; width: 180px; height: 70px; float: left; position: absolute; z-index: 99;}
+	
+	#final .LlamanosFooter {position:absolute; left: 650px; z-index: 3; padding-top: 30px; }
+	#final .LlamanosFooter p{ text-transform: uppercase; font-family: 'Nexa_Bold'; top:10px; font-style: normal; font-weight: 800; text-align: right; font-size: 10px; color: #ffffff;}
+	#final .telefono {position:absolute; left: 620px; z-index: 3; padding-top: 50px; }
+	#final .telefono p{ text-transform: uppercase; font-family: 'Nexa_Bold'; top:10px; font-style: normal; font-weight: 800; text-align: right; font-size: 12px; color: #ffffff;}
+	#final .comparte {position:absolute; left: 640px; z-index: 3; padding-top: 130px; }
+	#final .comparte p{ text-transform: uppercase; font-family: 'Nexa_Bold'; padding-right: 25px; top:10px; font-style: normal; font-weight: 800; text-align: right; font-size: 9px; color: #ffffff;}
+	#final .lineaLlamanosFooter { position: absolute; vertical-align: middle; padding-left: 600px; top: 20px; }
+	#final .lineaLlamanosFooter hr { margin-left: auto; margin-right: auto; position: absolute; height: 1px; top: 16px; border: 0; width: 36px; background-color: #ffffff; z-index: 99;	}
+	#final .lineaLlamanosFooterComparte { position: absolute; vertical-align: middle; padding-left: 600px; top: 164px; }
+	#final .lineaLlamanosFooterComparte hr { margin-left: auto; margin-right: auto; position: absolute; height: 1px; top: 16px; border: 0; width: 36px; background-color: #ffffff; z-index: 99;	}
+	#final .icono-facebook img{ padding-left: 700px; top: 165px; width: 15px; height: 18px; float: left; position: absolute; z-index: 99;}
+	
+	#final .EmailFooter {position:absolute; left: 870px; z-index: 3; padding-top: 30px; }
+	#final .EmailFooter p{ font-family: 'Nexa_Bold'; top:10px; font-style: normal; font-weight: 800; text-align: right; font-size: 10px; color: #ffffff;}
+	#final .correo {position:absolute; left: 780px; z-index: 3; padding-top: 50px; }
+	#final .correo p{ font-family: 'Nexa_Bold'; top:10px; font-style: normal; font-weight: 800; text-align: right; font-size: 12px; color: #ffffff;}
+	#final .youtube {position:absolute; left: 850px; z-index: 3; padding-top: 130px; }
+	#final .youtube p{ text-transform: uppercase; font-family: 'Nexa_Bold'; padding-right: 35px; top:10px; font-style: normal; font-weight: 800; text-align: right; font-size: 9px; color: #ffffff;}
+	#final .EmailContactoBoton { position: absolute; top: 116px; float: left; vertical-align: middle; padding-left: 798px; z-index: 99; }
+	#final .EmailContactoBoton button{
+		position: absolute;
+		float: left;
+		box-sizing: content-box;
+		color: #ffffff;
+		background-color: #000000;
+		border: 1px solid #ffffff;
+		border-left-color: #ffffff;
+		float: left;
+		font-family: 'Cabin', helvetica, arial, sans-serif;
+		font-size: 9px;
+		font-weight: 400;
+		/*---altura de letra del boton-----*/
+		height: 25px;
+		text-transform: uppercase;
+		line-height: 20px;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		/*largo del boton*/
+		width: 110px;
+	}
+	
+	#final .lineaContactoEmailFooter { position: absolute; top: 20px; vertical-align: middle; padding-left: 810px; }
+	#final .lineaContactoEmailFooter hr { margin-left: auto; margin-right: auto; position: absolute; height: 1px; top: 16px; border: 0; width: 36px; background-color: #ffffff; z-index: 99;	}	
+	#final .lineaEmailFooter { position: absolute; top: 164px; vertical-align: middle; padding-left: 810px; }
+	#final .lineaEmailFooter hr { margin-left: auto; margin-right: auto; position: absolute; height: 1px; top: 16px; border: 0; width: 36px; background-color: #ffffff; z-index: 99;	}
+	#final .lineaYoutubeFooter { position: absolute; top: 130px; vertical-align: middle; padding-left: 830px; }
+	#final .lineaYoutubeFooter hr { position: absolute; margin-left: auto; margin-right: auto;  height: 1px; top: 16px; border: 0; width: 50px; background-color: #ffffff; z-index: 99;	}
+	#final .icono-youtube img{ position: absolute; padding-left: 900px; top: 165px; width: 20px; height: 25px; float: left;  z-index: 99;}
+	
+	#final .VisitanosFooter { position:absolute; left: 1100px; z-index: 3; padding-top: 30px; }
+	#final .VisitanosFooter p{ text-transform: uppercase; font-family: 'Nexa_Bold'; font-style: normal; font-weight: 800; text-align: right; font-size: 10px; color: #ffffff;}
+	#final .direccion { position:absolute; left: 1058px; z-index: 3; padding-top: 50px; }
+	#final .direccion p{ text-transform: uppercase; font-family: 'Nexa_Bold'; font-style: normal; font-weight: 800; text-align: right; font-size: 10px; color: #ffffff;}
+	#final .instagram { position:absolute; left: 1090px; z-index: 3; padding-top: 130px; }
+	#final .instagram p{ text-transform: uppercase; font-family: 'Nexa_Bold'; padding-right: 15px; font-style: normal; font-weight: 800; text-align: right; font-size: 9px; color: #ffffff;}
+	#final .lineaVisitanosFooter { position: absolute; padding-left: 1038px; top: 20px;  vertical-align: middle;  }
+	#final .lineaVisitanosFooter hr { margin-left: auto; margin-right: auto; position: absolute; height: 1px; top: 16px; border: 0; width: 36px; background-color: #ffffff; z-index: 99;	}
+	#final .lineaVisitanosFooterInstagram { position: absolute; padding-left: 1040px; top: 165px; vertical-align: middle;  }
+	#final .lineaVisitanosFooterInstagram hr { margin-left: auto; margin-right: auto; position: absolute; height: 1px; top: 16px; border: 0; width: 36px; background-color: #ffffff; z-index: 99;	}
+	#final .VisitanosFooterInstagramlogo img{ padding-left: 1150px; top: 165px; width: 15px; height: 25px; float: left; position: absolute; z-index: 99;}
+	
+	#final .DesingbyMonkey { position:absolute; top: 184px; left: 100px; z-index: 3; }
+	#final .DesingbyMonkey p{ text-transform: uppercase; font-family: 'Nexa_Bold'; font-style: normal; font-weight: 800; text-align: right; font-size: 10px; color: #ffffff;}
