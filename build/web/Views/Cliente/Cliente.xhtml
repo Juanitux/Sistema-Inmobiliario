@@ -14,35 +14,113 @@
                 <h1>Datos de Inmueble</h1>
                 
                 
+                <h:form>
+                    <p:commandButton value="Nuevo Inmueble" actionListener="#{clienteBean.prepararNuevoCliente()}"
+                                     oncomplete="PF('dialogNuevoCliente').show();"
+                                     update=":formNuevoCliente"/>
+                </h:form>
                 <h:form id="formMostraClientes">
                     <p:dataTable id="tablaClientes" paginator="true" paginatorPosition="top"
-                                 var="ct" value="#{clienteBean.listaClientes}"
-                                 emptyMessage="No se encontro inmueble"
-                                 widgetVar="tablaclienteBuscar"
-                                 filteredValue="#{clienteBean.clientesFiltrados}">
-                        
-                        <f:facet name="header">
-                            <p:outputPanel>
-                                <h:outputText value="Buscar:"/>
-                                <p:inputText id="globalFilter" onkeyup="PF('tablaclienteBuscar').filter()"
-                                             style="width: 500px;" placeholder="Buscar por ciudad"/>
-                            </p:outputPanel>
-                        </f:facet>
-                        
-                        
-                        <p:column headerText="Nombre del Inmueble" sortBy="#{ct.nombres}">
-                            <h:outputText value="#{ct.nombres} "/>
+                                 var="ct" value="#{clienteBean.listaClientes}">
+                        <p:column headerText="Codigo">
+                            <h:outputText value="#{ct.codCliente}"/>
                         </p:column>
                         
+                        <p:column headerText="Nombre del Inmueble">
+                            <h:outputText value="#{ct.nombres} #{ct.apellidos}"/>
+                        </p:column>
                         
-                        <p:column headerText="direccion" filterBy="#{ct.direccion}">
+                        <p:column headerText="direccion">
                             <h:outputText value="#{ct.direccion}"/>
                         </p:column>
                         
+                        <p:column headerText="Descripcion">
+                            <h:outputText value=" #{ct.apellidos}"/>
+                        </p:column>
                         
+                        <p:column headerText="Subir Imagen">
+                            <p:commandButton value="Subir Imagen" oncomplete="PF('dialogModificarCliente').show();"
+                                             update=":formModificarCliente">
+                                <f:setPropertyActionListener target="#{clienteBean.cliente}" value="#{ct}"> 
+                                </f:setPropertyActionListener>                
+                            </p:commandButton>
+                        </p:column>
                         
+                        <p:column headerText="Modificar">
+                            <p:commandButton value="Modificar" oncomplete="PF('dialogModificarCliente').show();"
+                                             update=":formModificarCliente">
+                                <f:setPropertyActionListener target="#{clienteBean.cliente}" value="#{ct}"> 
+                                </f:setPropertyActionListener>                
+                            </p:commandButton>
+                        </p:column>
                         
+                        <p:column headerText="Eliminar">
+                            <p:commandButton value="Eliminar" oncomplete="PF('dialogEliminarCliente').show();"
+                                             update=":formEliminarCliente">
+                            <f:setPropertyActionListener target="#{clienteBean.cliente}" value="#{ct}">
+                            </f:setPropertyActionListener>   
+                            </p:commandButton>
+                        </p:column>
                     </p:dataTable>
+                </h:form>
+                
+                <h:form id="formNuevoCliente">
+                    <p:dialog id="dlgNuevoCliente" widgetVar="dialogNuevoCliente" 
+                              resizable="false" showEffect="explode"
+                              hideEffect="explode" modal="true">
+                        <p:panelGrid columns="2" style="margin: 0 auto;">
+                            <p:outputLabel value="Nombre Inmueble"/>
+                                <p:inputText value="#{clienteBean.cliente.nombres}"
+                                             required="true" requiredMessage="Nombre es Obligatorio"/>
+                            
+                            <p:outputLabel value="Direccion"/>
+                                <p:inputText value="#{clienteBean.cliente.direccion}"
+                                             required="true" requiredMessage="Direccion es Obligatorio"/>
+                            
+                            <p:outputLabel value="Descripcion"/>
+                                <p:inputText value="#{clienteBean.cliente.apellidos}"
+                                             required="true" requiredMessage="Nombre es Obligatorio"/>    
+                            
+                                
+                        </p:panelGrid>
+                        <p:commandButton value="Guardar" actionListener="#{clienteBean.nuevoCliente()}"
+                                         update=":formMostraClientes:tablaClientes" 
+                                         oncomplete="PF('dialogNuevoCliente').hide();"/>
+                        <p:commandButton value="Cancelar" oncomplete="PF('dialogNuevoCliente').hide();"/>
+                    </p:dialog>
+                </h:form>
+                
+                <h:form id="formModificarCliente">
+                    <p:dialog id="dlgModificarCliente" widgetVar="dialogModificarCliente" 
+                              resizable="false" showEffect="explode"
+                              hideEffect="explode" modal="true">
+                        <p:panelGrid columns="2" style="margin: 0 auto;">
+                            <p:outputLabel value="Nombres"/>
+                                <p:inputText value="#{clienteBean.cliente.nombres}"/>
+                            
+                            <p:outputLabel value="Direccion"/>
+                                <p:inputText value="#{clienteBean.cliente.direccion}"/>
+                                
+                            <p:outputLabel value="Descripcion"/>
+                                <p:inputText value="#{clienteBean.cliente.apellidos}"/>
+                        </p:panelGrid>
+                        <p:commandButton value="Guardar" actionListener="#{clienteBean.modificarCliente()}"
+                                         update=":formMostraClientes:tablaClientes" 
+                                         oncomplete="PF('dialogModificarCliente').hide();"/>
+                        <p:commandButton value="Cancelar" oncomplete="PF('dialogModificarCliente').hide();"/>
+                    </p:dialog>
+                </h:form>
+                
+                <h:form id="formEliminarCliente">
+                    <p:dialog id="dlgEliminarCliente" widgetVar="dialogEliminarCliente" 
+                              resizable="false" showEffect="explode"
+                              hideEffect="explode" modal="true">
+                        <h:outputText value="Desea eliminar este registro?"/>
+                        <p:commandButton value="Si" actionListener="#{clienteBean.eliminarCliente()}"
+                                         update=":formMostraClientes:tablaClientes" 
+                                         oncomplete="PF('dialogEliminarCliente').hide();"/>
+                        <p:commandButton value="No" oncomplete="PF('dialogEliminarCliente').hide();"/>
+                    </p:dialog>
                 </h:form>
                 
             
